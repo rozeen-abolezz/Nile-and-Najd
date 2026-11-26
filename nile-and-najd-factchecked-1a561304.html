@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth overflow-x-hidden" dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nile &amp; Najd | النيل ونجد — Rozeen Ahmed</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Google Fonts: Plus Jakarta Sans & Playfair Display (EN) + Cairo & Tajawal (AR) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Tajawal:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        arabic: ['"Cairo"', '"Tajawal"', 'sans-serif'],
+                    },
+                    colors: {
+                        nile: {
+                            50: '#f0f7fa',
+                            100: '#daecf4',
+                            600: '#166088',
+                            700: '#114b6b',
+                            800: '#0d3b54',
+                            900: '#082738',
+                            950: '#051924',
+                        },
+                        najd: {
+                            50: '#fbf8f1',
+                            100: '#f5eedc',
+                            300: '#e4c28b',
+                            400: '#d4a359',
+                            500: '#c58f3d',
+                            600: '#a6722a',
+                        },
+                        oasis: {
+                            600: '#157f5c',
+                            700: '#11664a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        html[dir="rtl"] body {
+            font-family: 'Cairo', 'Tajawal', sans-serif;
+        }
+        html[dir="rtl"] .font-serif {
+            font-family: 'Cairo', sans-serif !important;
+        }
+        html[dir="ltr"] body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-najd-50 text-slate-800 antialiased selection:bg-najd-400 selection:text-white overflow-x-hidden">
+<!-- Top Competition Banner -->
+<div class="bg-nile-950 text-najd-100 text-[11px] sm:text-xs py-2 px-3 text-center border-b border-nile-800">
+<span class="font-bold text-najd-400" data-i18n="bannerTitle">Egyptian Creator (المبدع المصري) • Season 2 (2026/2027)</span>
+<span class="hidden md:inline mx-2 text-nile-600">|</span>
+<span class="block md:inline text-slate-300 mt-0.5 md:mt-0" data-i18n="bannerSub">Programming Track • Egyptian Consulate &amp; Cultural Bureau in Riyadh &amp; EYUA</span>
+</div>
+<!-- Sticky Navigation -->
+<header class="sticky top-0 z-40 glass-header border-b border-najd-100 shadow-sm w-full">
+<div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-2">
+<!-- Brand Identity -->
+<a class="flex items-center gap-2 sm:gap-3 min-w-0 shrink" href="#">
+<div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-nile-700 to-oasis-600 flex items-center justify-center text-white shadow shrink-0">
+<svg class="w-5 h-5 text-najd-100" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+</div>
+<div class="min-w-0">
+<span class="font-serif font-bold text-base sm:text-lg text-nile-900 tracking-tight block leading-none truncate" data-i18n="brandName">Nile &amp; Najd</span>
+<span class="text-[10px] sm:text-[11px] font-medium text-najd-600 block truncate mt-0.5" data-i18n="brandTagline">Egypt &amp; KSA Tourism &amp; Vision Guide</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-600">
+<a class="hover:text-nile-800 transition-colors" data-i18n="navDestinations" href="#destinations">Explore Destinations</a>
+<a class="hover:text-nile-800 transition-colors flex items-center gap-1.5" href="#itinerary">
+<span data-i18n="navItinerary">My Trip Plan</span>
+<span class="px-2 py-0.5 text-[11px] font-bold rounded-full bg-najd-500 text-white" id="nav-trip-count">2</span>
+</a>
+<a class="hover:text-nile-800 transition-colors" data-i18n="navToolkit" href="#toolkit">Visitor Toolkit</a>
+<a class="hover:text-nile-800 transition-colors" data-i18n="navYouth" href="#youth-spirit">Youth Spirit</a>
+</nav>
+<!-- Language Toggle, Info & Mobile Menu -->
+<div class="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+<button aria-label="Toggle Language" class="px-3 sm:px-3.5 py-2 rounded-xl bg-najd-100 hover:bg-najd-300/60 border border-najd-400/50 text-nile-900 text-xs sm:text-sm font-bold transition-all shadow-sm flex items-center gap-1.5 cursor-pointer" id="lang-toggle-btn" onclick="toggleLanguage()">
+<svg class="w-4 h-4 text-najd-600 shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>
+<span id="lang-toggle-label">العربية</span>
+</button>
+<button aria-label="About Project" class="px-2.5 sm:px-3.5 py-2 rounded-xl bg-nile-800 hover:bg-nile-900 text-white text-xs sm:text-sm font-semibold transition-all shadow-sm flex items-center gap-1.5 cursor-pointer" onclick="openAboutModal()">
+<svg class="w-4 h-4 text-najd-400 shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+<span class="hidden sm:inline" data-i18n="btnProjectInfo">Project Info</span>
+</button>
+<button aria-label="Open Menu" class="lg:hidden p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-nile-900 transition-colors cursor-pointer" onclick="toggleMobileMenu()">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+</button>
+</div>
+</div>
+<!-- Collapsible Mobile/Tablet Drawer -->
+<div class="hidden lg:hidden bg-white border-t border-najd-100 px-4 py-3 shadow-lg" id="mobile-nav-drawer">
+<div class="grid grid-cols-2 gap-2 text-xs sm:text-sm font-bold text-nile-900">
+<a class="p-2.5 rounded-xl bg-najd-50 hover:bg-najd-100 flex items-center gap-2" href="#destinations" onclick="closeMobileMenu()">
+<span class="text-najd-600">🧭</span>
+<span data-i18n="navDestinations">Explore Destinations</span>
+</a>
+<a class="p-2.5 rounded-xl bg-najd-50 hover:bg-najd-100 flex items-center justify-between gap-2" href="#itinerary" onclick="closeMobileMenu()">
+<span class="flex items-center gap-2">
+<span class="text-oasis-600">🗺️</span>
+<span data-i18n="navItinerary">My Trip Plan</span>
+</span>
+<span class="px-2 py-0.5 text-[11px] font-bold rounded-full bg-najd-500 text-white" id="drawer-trip-count">2</span>
+</a>
+<a class="p-2.5 rounded-xl bg-najd-50 hover:bg-najd-100 flex items-center gap-2" href="#toolkit" onclick="closeMobileMenu()">
+<span class="text-nile-600">💬</span>
+<span data-i18n="navToolkit">Visitor Toolkit</span>
+</a>
+<a class="p-2.5 rounded-xl bg-najd-50 hover:bg-najd-100 flex items-center gap-2" href="#youth-spirit" onclick="closeMobileMenu()">
+<span class="text-emerald-600">✨</span>
+<span data-i18n="navYouth">Youth Spirit</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-8 pb-14 sm:pt-12 sm:pb-20 lg:pt-16 lg:pb-24 bg-gradient-to-b from-nile-950 via-nile-900 to-nile-800 text-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+<!-- Left Column: Intro & CTA -->
+<div class="lg:col-span-7 space-y-5 text-center lg:text-start">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 text-najd-100 text-[11px] sm:text-xs font-medium max-w-full">
+<span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
+<span class="truncate" data-i18n="heroBadge">Made by Rozeen Ahmed • Egyptian Female Student in KSA</span>
+</div>
+<h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight" data-i18n="heroTitle">
+                        Your Ultimate Guide Between the <span class="text-najd-400">Nile</span> &amp; <span class="text-emerald-400">Najd</span>
+</h1>
+<p class="text-sm sm:text-lg text-slate-200 max-w-2xl mx-auto lg:mx-0 leading-relaxed" data-i18n="heroDesc">
+                        Explore ancient wonders, Red Sea escapes, authentic cuisine, and futuristic <strong>Modern Vision</strong> mega-projects across <strong>Egypt</strong> and <strong>Saudi Arabia</strong>—with a live two-country trip planner and dialect bridge.
+                    </p>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 pt-1">
+<a class="px-5 sm:px-6 py-3.5 rounded-xl bg-najd-500 hover:bg-najd-600 text-white font-bold text-sm transition-all shadow-lg flex items-center justify-center gap-2" href="#destinations">
+<span data-i18n="heroCtaPrimary">Explore 16 Places &amp; Build Trip</span>
+</a>
+<a class="px-5 sm:px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-sm transition-all flex items-center justify-center gap-2" href="#toolkit">
+<span data-i18n="heroCtaSecondary">Dialect Bridge &amp; Tips</span>
+</a>
+</div>
+<!-- Highlights Strip -->
+<div class="grid grid-cols-3 gap-2 sm:gap-4 pt-5 border-t border-white/10 max-w-lg mx-auto lg:mx-0">
+<div>
+<div class="text-lg sm:text-2xl font-serif font-bold text-najd-400" data-i18n="stat1Num">16 Gems</div>
+<div class="text-[11px] sm:text-xs text-slate-300" data-i18n="stat1Label">8 Egypt • 8 KSA</div>
+</div>
+<div>
+<div class="text-lg sm:text-2xl font-serif font-bold text-emerald-400" data-i18n="stat2Num">Trip Builder</div>
+<div class="text-[11px] sm:text-xs text-slate-300" data-i18n="stat2Label">Custom Two-Country Plan</div>
+</div>
+<div>
+<div class="text-lg sm:text-2xl font-serif font-bold text-sky-300" data-i18n="stat3Num">Dialect Bridge</div>
+<div class="text-[11px] sm:text-xs text-slate-300" data-i18n="stat3Label">Egyptian ↔ Saudi ↔ EN</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Creator & Shumukh Al-Ajyal School Card -->
+<div class="lg:col-span-5 w-full min-w-0">
+<div class="rounded-2xl sm:rounded-3xl bg-white/10 border border-white/20 p-4 sm:p-6 md:p-7 backdrop-blur-md shadow-2xl space-y-4 sm:space-y-5">
+<!-- Twin Nations Header -->
+<div class="flex items-center justify-between pb-4 border-b border-white/10 gap-2">
+<div class="flex items-center gap-2 min-w-0">
+<span aria-label="Egypt" class="text-2xl sm:text-3xl shrink-0" role="img">🇪🇬</span>
+<div class="min-w-0">
+<h3 class="font-bold text-xs sm:text-sm text-white truncate" data-i18n="cardEgyptTitle">Arab Republic of Egypt</h3>
+<p class="text-[11px] text-najd-100 truncate" data-i18n="cardEgyptSub">Cairo • Giza • Luxor • New Alamein</p>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-najd-500/30 flex items-center justify-center text-najd-300 text-xs font-bold shrink-0">
+                                ↔
+                            </div>
+<div class="flex items-center gap-2 text-end min-w-0">
+<div class="min-w-0">
+<h3 class="font-bold text-xs sm:text-sm text-white truncate" data-i18n="cardSaudiTitle">Kingdom of Saudi Arabia</h3>
+<p class="text-[11px] text-emerald-300 truncate" data-i18n="cardSaudiSub">Riyadh • Diriyah • Al-Ula • NEOM</p>
+</div>
+<span aria-label="Saudi Arabia" class="text-2xl sm:text-3xl shrink-0" role="img">🇸🇦</span>
+</div>
+</div>
+<!-- Student Perspective Quote -->
+<div class="space-y-2">
+<div class="inline-block px-2.5 py-1 rounded-md bg-najd-500/25 text-najd-300 text-[11px] font-bold" data-i18n="quoteBadge">
+                                Purpose &amp; Vision • Rozeen Ahmed
+                            </div>
+<p class="font-serif italic text-sm sm:text-base text-slate-100 leading-relaxed" data-i18n="quoteText">
+                                "As an Egyptian female student living in Saudi Arabia, I created this guide to help families, students, and travelers discover the heritage and modern vision of both brotherly nations."
+                            </p>
+</div>
+<!-- School & Student Identity Card -->
+<div class="p-3.5 sm:p-4 rounded-2xl bg-white text-nile-950 shadow-lg flex items-center gap-3.5 border border-najd-300">
+<!-- Custom SVG Emblem for Shumukh Al-Ajyal Private Schools -->
+<div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-white border border-slate-200 p-1.5 flex items-center justify-center shrink-0 shadow-sm">
+<svg aria-label="Shumukh Al-Ajyal Schools Emblem" class="w-full h-full" role="img" viewbox="0 0 120 110" xmlns="http://www.w3.org/2000/svg">
+<!-- Three Stars -->
+<polygon fill="#1e73be" points="60,8 62.6,15.5 70.5,15.5 64.1,20.2 66.5,27.8 60,23.1 53.5,27.8 55.9,20.2 49.5,15.5 57.4,15.5"></polygon>
+<polygon fill="#2b84cf" points="41,17 42.9,22.4 48.6,22.4 44,25.8 45.7,31.2 41,27.8 36.3,31.2 38,25.8 33.4,22.4 39.1,22.4"></polygon>
+<polygon fill="#2b84cf" points="79,17 80.9,22.4 86.6,22.4 82,25.8 83.7,31.2 79,27.8 74.3,31.2 76,25.8 71.4,22.4 77.1,22.4"></polygon>
+<!-- Rising Sun Rays -->
+<g stroke="#7cc2ec" stroke-linecap="round" stroke-width="3">
+<line x1="60" x2="60" y1="33" y2="45"></line>
+<line x1="48" x2="52" y1="36" y2="47"></line>
+<line x1="72" x2="68" y1="36" y2="47"></line>
+<line x1="37" x2="45" y1="43" y2="51"></line>
+<line x1="83" x2="75" y1="43" y2="51"></line>
+<line x1="30" x2="40" y1="53" y2="57"></line>
+<line x1="90" x2="80" y1="53" y2="57"></line>
+</g>
+<!-- Open Book Pages -->
+<path d="M16,54 Q42,64 60,78 Q78,64 104,54 L96,68 Q75,74 60,86 Q45,74 24,68 Z" fill="#7cc2ec"></path>
+<path d="M22,65 Q44,72 60,84 Q76,72 98,65 L91,82 Q73,86 60,97 Q47,86 29,82 Z" fill="#0066a1"></path>
+<path d="M56,95 L64,95 L62,100 L58,100 Z" fill="#0066a1"></path>
+</svg>
+</div>
+<div class="min-w-0 flex-1">
+<div class="text-[10px] sm:text-[11px] font-bold text-oasis-700 uppercase tracking-wide" data-i18n="creatorRoleBadge">
+                                    Made by an Egyptian Female Student in KSA
+                                </div>
+<div class="font-bold text-sm sm:text-base text-nile-900" data-i18n="creatorName">
+                                    Rozeen Ahmed
+                                </div>
+<div class="text-[11px] sm:text-xs font-semibold text-nile-700 leading-snug" data-i18n="creatorSchool">
+                                    Shumukh Al-Ajyal Private Schools • Egyptian Track
+                                </div>
+<div class="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 truncate" data-i18n="creatorMotto">
+                                    Where Horizons Expand for a Vision of the Future
+                                </div>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded-lg bg-nile-950/60 text-[11px] text-slate-200 border border-white/10">#المبدع_المصري</span>
+<span class="px-2.5 py-1 rounded-lg bg-nile-950/60 text-[11px] text-slate-200 border border-white/10">#شموخ_الأجيال</span>
+<span class="px-2.5 py-1 rounded-lg bg-nile-950/60 text-[11px] text-slate-200 border border-white/10">#EgyptSaudiGuide</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 1: Ultimate Tourism & Modern Vision Guide (16 Destinations) -->
+<section class="py-12 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="destinations">
+<div class="text-center max-w-3xl mx-auto mb-8 sm:mb-10 space-y-2.5">
+<span class="text-xs font-bold uppercase tracking-widest text-najd-600" data-i18n="destEyebrow">Ultimate Tourism &amp; Modern Vision Guide</span>
+<h2 class="font-serif text-2xl sm:text-4xl font-bold text-nile-900" data-i18n="destTitle">Explore Landmarks &amp; Mega-Projects in Egypt &amp; KSA</h2>
+<p class="text-slate-600 text-xs sm:text-base" data-i18n="destSubtitle">
+                Filter across Egypt and Saudi Arabia by Modern Vision projects, Ancient Heritage, Nature &amp; Sea, or Hospitality &amp; Cuisine—and add any stop directly to your personal itinerary.
+            </p>
+</div>
+<!-- Dual Filter Controls -->
+<div class="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-slate-200 shadow-sm mb-8 space-y-3.5">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3.5">
+<!-- Country Filter -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 lg:pb-0">
+<span class="text-xs font-bold uppercase tracking-wider text-slate-400 shrink-0" data-i18n="filterCountryLabel">Country:</span>
+<button class="country-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-nile-800 text-white transition-all cursor-pointer shrink-0" data-country="all" onclick="setCountryFilter('all')">
+<span data-i18n="filterAllCountries">All (Egypt &amp; KSA)</span>
+</button>
+<button class="country-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-najd-100 transition-all cursor-pointer shrink-0" data-country="egypt" onclick="setCountryFilter('egypt')">
+<span data-i18n="filterEgypt">🇪🇬 Egypt</span>
+</button>
+<button class="country-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-emerald-50 transition-all cursor-pointer shrink-0" data-country="saudi" onclick="setCountryFilter('saudi')">
+<span data-i18n="filterSaudi">🇸🇦 Saudi Arabia</span>
+</button>
+</div>
+<!-- Experience Category Filter -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 lg:pb-0">
+<span class="text-xs font-bold uppercase tracking-wider text-slate-400 shrink-0" data-i18n="filterCatLabel">Experience:</span>
+<button class="cat-btn px-3 py-2 rounded-xl text-xs font-bold bg-najd-500 text-white transition-all cursor-pointer shrink-0" data-cat="all" onclick="setCategoryFilter('all')">
+<span data-i18n="catAll">All</span>
+</button>
+<button class="cat-btn px-3 py-2 rounded-xl text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all cursor-pointer shrink-0" data-cat="modern" onclick="setCategoryFilter('modern')">
+<span data-i18n="catModern">Modern Vision</span>
+</button>
+<button class="cat-btn px-3 py-2 rounded-xl text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all cursor-pointer shrink-0" data-cat="heritage" onclick="setCategoryFilter('heritage')">
+<span data-i18n="catHeritage">Heritage &amp; History</span>
+</button>
+<button class="cat-btn px-3 py-2 rounded-xl text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all cursor-pointer shrink-0" data-cat="nature" onclick="setCategoryFilter('nature')">
+<span data-i18n="catNature">Nature &amp; Sea</span>
+</button>
+<button class="cat-btn px-3 py-2 rounded-xl text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all cursor-pointer shrink-0" data-cat="hospitality" onclick="setCategoryFilter('hospitality')">
+<span data-i18n="catHospitality">Hospitality &amp; Cuisine</span>
+</button>
+</div>
+</div>
+<div class="pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+<span id="dest-results-count">Showing 16 destinations</span>
+<button class="text-nile-700 hover:text-najd-600 font-bold cursor-pointer" data-i18n="resetFiltersBtn" onclick="resetFilters()">
+                    Reset Filters
+                </button>
+</div>
+</div>
+<!-- Destinations Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6" id="destinations-grid">
+<!-- Populated via JS -->
+</div>
+</section>
+<!-- SECTION 2: Interactive Egypt <-> KSA Trip Itinerary Builder & Appreciation Card -->
+<section class="py-12 sm:py-16 bg-gradient-to-br from-nile-950 via-nile-900 to-nile-800 text-white border-y border-nile-700" id="itinerary">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-5 mb-8">
+<div class="space-y-2 max-w-2xl">
+<span class="text-xs font-bold uppercase tracking-widest text-najd-400" data-i18n="itinEyebrow">Interactive Trip Builder</span>
+<h2 class="font-serif text-2xl sm:text-4xl font-bold" data-i18n="itinTitle">My Egypt ↔ Saudi Arabia Trip Itinerary</h2>
+<p class="text-slate-300 text-xs sm:text-base" data-i18n="itinSubtitle">
+                        Plan a custom family or student tour across both countries, assign days, reorder stops, and copy your formatted itinerary to share.
+                    </p>
+</div>
+<!-- Summary Counters & Controls -->
+<div class="flex flex-wrap items-center gap-2.5">
+<div class="px-3.5 py-2 rounded-xl bg-white/10 border border-white/15 text-xs sm:text-sm flex items-center gap-2.5">
+<span>🇪🇬 <strong class="text-najd-400" id="itin-egypt-count">0</strong></span>
+<span class="text-white/30">|</span>
+<span>🇸🇦 <strong class="text-emerald-400" id="itin-saudi-count">0</strong></span>
+<span class="text-white/30">|</span>
+<span><span data-i18n="itinTotalLabel">Total:</span> <strong id="itin-total-count">0</strong></span>
+</div>
+<button class="px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-xs sm:text-sm font-semibold transition-all cursor-pointer" onclick="loadSampleTour()">
+<span data-i18n="itinSampleBtn">Load Sample 4-Stop Tour</span>
+</button>
+<button class="px-4 py-2 rounded-xl bg-najd-500 hover:bg-najd-600 text-white text-xs sm:text-sm font-bold transition-all shadow-lg cursor-pointer" onclick="copyItinerary()">
+<span data-i18n="itinCopyBtn">Copy Trip Plan</span>
+</button>
+</div>
+</div>
+<!-- Stops List -->
+<div class="space-y-3.5" id="itinerary-list">
+<!-- Populated via JS -->
+</div>
+<!-- Customizable Bilingual Appreciation & Travel Card Generator -->
+<div class="mt-8 sm:mt-10 rounded-2xl sm:rounded-3xl bg-white/10 border border-najd-400/40 p-4 sm:p-6 md:p-8 backdrop-blur-md flex flex-col lg:flex-row items-center justify-between gap-6">
+<div class="space-y-1.5 text-center lg:text-start max-w-2xl">
+<span class="inline-block px-3 py-1 rounded-full bg-najd-500/25 text-najd-300 text-[11px] font-bold uppercase tracking-wider" data-i18n="cardPassBadge">
+                        Printable Souvenir Card
+                    </span>
+<h3 class="font-serif text-lg sm:text-2xl font-bold text-white" data-i18n="cardPassTitle">
+                        Nile &amp; Najd Cultural &amp; Travel Appreciation Card
+                    </h3>
+<p class="text-xs sm:text-sm text-slate-200 leading-relaxed" data-i18n="cardPassDesc">
+                        Enter your name and download a high-resolution PNG card featuring the Shumukh Al-Ajyal emblem and celebrating Egypt 🇪🇬 &amp; Saudi Arabia 🇸🇦.
+                    </p>
+</div>
+<div class="w-full lg:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
+<input class="px-3.5 py-2.5 rounded-xl bg-white text-slate-900 text-xs sm:text-sm font-medium focus:outline-none focus:ring-2 focus:ring-najd-400 min-w-0 sm:w-56" id="cert-name-input" placeholder="Enter your name..." type="text"/>
+<button class="px-4 py-2.5 rounded-xl bg-oasis-600 hover:bg-oasis-700 text-white text-xs sm:text-sm font-bold transition-all shadow-lg cursor-pointer shrink-0" onclick="downloadAppreciationCard()">
+<span data-i18n="certDownloadBtn">Download Card (PNG)</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Egypt <-> KSA Visitor Toolkit (Dialect Bridge & Traveler Tips) -->
+<section class="py-12 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="toolkit">
+<div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12 space-y-2.5">
+<span class="text-xs font-bold uppercase tracking-widest text-oasis-600" data-i18n="toolEyebrow">Visitor &amp; Family Essentials</span>
+<h2 class="font-serif text-2xl sm:text-4xl font-bold text-nile-900" data-i18n="toolTitle">Egypt ↔ KSA Dialect Bridge &amp; Traveler Tips</h2>
+<p class="text-slate-600 text-xs sm:text-base" data-i18n="toolSubtitle">
+                Compare everyday phrases side-by-side in English, Egyptian Arabic, and Saudi Arabic with one-tap copy, plus practical tips for visiting both countries.
+            </p>
+</div>
+<div class="grid lg:grid-cols-12 gap-6 sm:gap-8 items-start">
+<!-- Left 7 Cols: Everyday Dialect Bridge -->
+<div class="lg:col-span-7 bg-white rounded-2xl sm:rounded-3xl border border-slate-200 p-4 sm:p-6 md:p-8 shadow-md space-y-5">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">
+<div>
+<h3 class="font-serif text-lg sm:text-2xl font-bold text-nile-900" data-i18n="phraseTitle">Everyday Dialect Bridge</h3>
+<p class="text-xs text-slate-500 mt-0.5" data-i18n="phraseSub">Tap any phrase card to copy it instantly</p>
+</div>
+<div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar pb-1 sm:pb-0">
+<button class="phrase-cat-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-nile-800 text-white cursor-pointer shrink-0" data-i18n="pcatGreetings" data-pcat="greetings" onclick="setPhraseCat('greetings')">Greetings</button>
+<button class="phrase-cat-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer shrink-0" data-i18n="pcatHospitality" data-pcat="hospitality" onclick="setPhraseCat('hospitality')">Hospitality</button>
+<button class="phrase-cat-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer shrink-0" data-i18n="pcatDining" data-pcat="dining" onclick="setPhraseCat('dining')">Dining</button>
+<button class="phrase-cat-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer shrink-0" data-i18n="pcatDirections" data-pcat="directions" onclick="setPhraseCat('directions')">Getting Around</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4" id="phrasebook-grid">
+<!-- Populated via JS -->
+</div>
+</div>
+<!-- Right 5 Cols: Smart Traveler & Family Tips -->
+<div class="lg:col-span-5 bg-najd-100/70 rounded-2xl sm:rounded-3xl border border-najd-300/60 p-4 sm:p-6 md:p-8 shadow-md space-y-4">
+<div>
+<h3 class="font-serif text-lg sm:text-xl font-bold text-nile-900" data-i18n="checkTitle">Smart Traveler &amp; Family Tips</h3>
+<p class="text-xs text-slate-600 mt-0.5" data-i18n="checkSub">Essential know-how for visiting both nations</p>
+</div>
+<div class="space-y-3" id="checklist-items">
+<!-- Populated via JS -->
+</div>
+</div>
+</div>
+<div class="mt-6 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-700"><strong data-i18n="refsTitle">Selected official references</strong><p data-i18n="refsNote">Schedules and access details can change. Confirm directly with each venue or operator before travel.</p><a class="underline text-nile-800 font-semibold me-3" data-i18n="refsGem" href="https://gem.eg/en/visit/plan-your-visit/" rel="noopener noreferrer" target="_blank">Grand Egyptian Museum: visit information</a><a class="underline text-nile-800 font-semibold me-3" data-i18n="refsTransit" href="https://www.rcrc.gov.sa/en/projects/king-abdulaziz-project-for-riyadh-public-transport-2/" rel="noopener noreferrer" target="_blank">Riyadh Public Transport: network information</a><a class="underline text-nile-800 font-semibold me-3" data-i18n="refsAlula" href="https://www.experiencealula.com/" rel="noopener noreferrer" target="_blank">Experience AlUla: official trip planner</a><a class="underline text-nile-800 font-semibold me-3" data-i18n="refsQiddiya" href="https://qiddiya.com/" rel="noopener noreferrer" target="_blank">Qiddiya City: official site</a></div></section>
+<!-- SECTION 4: Spirit of Egypt Inside Every Student in KSA -->
+<section class="py-12 sm:py-20 bg-white border-t border-najd-100" id="youth-spirit">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="rounded-2xl sm:rounded-3xl bg-gradient-to-br from-nile-900 to-nile-950 text-white p-5 sm:p-8 md:p-12 shadow-2xl">
+<div class="grid lg:grid-cols-12 gap-6 sm:gap-8 items-center">
+<div class="lg:col-span-5 space-y-3 sm:space-y-4">
+<span class="text-xs font-bold uppercase tracking-widest text-najd-400" data-i18n="voiceEyebrow">Student Perspective</span>
+<h2 class="font-serif text-2xl sm:text-3xl font-bold leading-snug" data-i18n="voiceTitle">
+                            The Spirit of Egypt Inside Every Student in KSA
+                        </h2>
+<p class="text-xs sm:text-sm text-slate-300 leading-relaxed" data-i18n="voiceDesc">
+                            Living abroad transforms us into young cultural ambassadors. At Shumukh Al-Ajyal Private Schools, Egyptian students carry their heritage with pride while celebrating Saudi Arabia as a beloved second home.
+                        </p>
+</div>
+<div class="lg:col-span-7 grid sm:grid-cols-2 gap-4">
+<div class="p-4 sm:p-5 rounded-2xl bg-white/10 border border-white/10 space-y-2">
+<h4 class="font-bold text-sm sm:text-base text-najd-300" data-i18n="pillar1Title">Academic &amp; Cultural Pride</h4>
+<p class="text-xs text-slate-300 leading-relaxed" data-i18n="pillar1Desc">
+                                Sharing Egyptian history, literature, and warmth in classrooms across the Kingdom while excelling in programming and digital innovation.
+                            </p>
+</div>
+<div class="p-4 sm:p-5 rounded-2xl bg-white/10 border border-white/10 space-y-2">
+<h4 class="font-bold text-sm sm:text-base text-emerald-300" data-i18n="pillar2Title">One Shared Future</h4>
+<p class="text-xs text-slate-300 leading-relaxed" data-i18n="pillar2Desc">
+                                Inspired by Egypt's New Republic and Saudi Vision 2030, youth in both nations are building bridges of technology and friendship for tomorrow.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-nile-950 text-slate-400 py-8 sm:py-10 border-t border-nile-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-5">
+<div class="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-start">
+<div class="w-12 h-12 rounded-xl bg-white p-1.5 flex items-center justify-center shrink-0">
+<svg aria-label="Shumukh Al-Ajyal Schools Emblem" class="w-full h-full" role="img" viewbox="0 0 120 110" xmlns="http://www.w3.org/2000/svg">
+<polygon fill="#1e73be" points="60,8 62.6,15.5 70.5,15.5 64.1,20.2 66.5,27.8 60,23.1 53.5,27.8 55.9,20.2 49.5,15.5 57.4,15.5"></polygon>
+<polygon fill="#2b84cf" points="41,17 42.9,22.4 48.6,22.4 44,25.8 45.7,31.2 41,27.8 36.3,31.2 38,25.8 33.4,22.4 39.1,22.4"></polygon>
+<polygon fill="#2b84cf" points="79,17 80.9,22.4 86.6,22.4 82,25.8 83.7,31.2 79,27.8 74.3,31.2 76,25.8 71.4,22.4 77.1,22.4"></polygon>
+<g stroke="#7cc2ec" stroke-linecap="round" stroke-width="3">
+<line x1="60" x2="60" y1="33" y2="45"></line>
+<line x1="48" x2="52" y1="36" y2="47"></line>
+<line x1="72" x2="68" y1="36" y2="47"></line>
+<line x1="37" x2="45" y1="43" y2="51"></line>
+<line x1="83" x2="75" y1="43" y2="51"></line>
+<line x1="30" x2="40" y1="53" y2="57"></line>
+<line x1="90" x2="80" y1="53" y2="57"></line>
+</g>
+<path d="M16,54 Q42,64 60,78 Q78,64 104,54 L96,68 Q75,74 60,86 Q45,74 24,68 Z" fill="#7cc2ec"></path>
+<path d="M22,65 Q44,72 60,84 Q76,72 98,65 L91,82 Q73,86 60,97 Q47,86 29,82 Z" fill="#0066a1"></path>
+</svg>
+</div>
+<div>
+<p class="text-white font-serif font-semibold text-sm sm:text-base" data-i18n="footerTitle">Nile &amp; Najd: Bridges of Heritage &amp; Youth</p>
+<p class="text-xs mt-0.5" data-i18n="footerSub">Submitted for <strong>"Egyptian Creator" (المبدع المصري) Season 2 (2026/2027)</strong> — Programming Track</p>
+<p class="text-xs text-sky-300 mt-0.5" data-i18n="footerSchool">Shumukh Al-Ajyal Private Schools • Egyptian Track</p>
+</div>
+</div>
+<div class="text-xs text-center md:text-end space-y-1">
+<p class="text-slate-300" data-i18n="footerOrgs">Egyptian Consulate in Riyadh • Egyptian Cultural &amp; Educational Bureau • EYUA</p>
+<p class="text-najd-400 font-semibold" data-i18n="footerCredit">Made by Rozeen Ahmed • Egyptian Female Student in KSA</p>
+</div>
+</div>
+</footer>
+<!-- Floating Mobile/Tablet Shortcut to My Trip -->
+<a class="lg:hidden fixed bottom-4 end-4 z-30 px-4 py-3 rounded-full bg-nile-900 hover:bg-nile-950 text-white border border-najd-400 shadow-2xl flex items-center gap-2 text-xs font-bold" href="#itinerary">
+<span data-i18n="floatingTripLabel">My Trip</span>
+<span class="px-2 py-0.5 rounded-full bg-najd-500 text-white text-[11px]" id="floating-trip-count">2</span>
+</a>
+<!-- Project Info Modal -->
+<div class="fixed inset-0 z-50 hidden bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4" id="about-modal">
+<div class="bg-white rounded-2xl sm:rounded-3xl max-w-lg w-full p-5 sm:p-8 shadow-2xl space-y-4 relative max-h-[90vh] overflow-y-auto">
+<button aria-label="Close Modal" class="absolute top-4 end-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-700 font-bold cursor-pointer" onclick="closeAboutModal()">✕</button>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-najd-100 text-najd-600 text-xs font-bold" data-i18n="modalBadge">
+                Competition Submission Overview
+            </div>
+<h3 class="font-serif text-xl sm:text-2xl font-bold text-nile-900" data-i18n="modalTitle">About This Web Application</h3>
+<p class="text-xs sm:text-sm text-slate-600 leading-relaxed" data-i18n="modalIntro">
+<strong>Nile &amp; Najd</strong> was created by <strong>Rozeen Ahmed</strong> (an Egyptian female student at Shumukh Al-Ajyal Private Schools - Egyptian Track in Saudi Arabia) for the <strong>"Egyptian Creator" Season 2 (2026/2027)</strong> competition under the <strong>Programming</strong> track.
+            </p>
+<ul class="space-y-2 text-xs sm:text-sm text-slate-700">
+<li data-i18n="modalPoint1">• <strong>Ultimate Tourism &amp; Vision Guide:</strong> 16 curated destinations &amp; Modern Vision mega-projects across Egypt and Saudi Arabia.</li>
+<li data-i18n="modalPoint2">• <strong>Interactive Trip Builder &amp; Souvenir Card:</strong> Plan a two-country itinerary, copy it to share, and download a custom PNG card.</li>
+<li data-i18n="modalPoint3">• <strong>Bilingual &amp; Responsive:</strong> Seamless English &amp; Arabic switching (LTR/RTL) designed for phones, tablets, and desktops.</li>
+</ul>
+<div class="pt-2 flex justify-end">
+<button class="px-5 py-2.5 rounded-xl bg-nile-800 text-white text-xs sm:text-sm font-semibold hover:bg-nile-900 cursor-pointer" data-i18n="modalCloseBtn" onclick="closeAboutModal()">
+                    Explore App
+                </button>
+</div>
+</div>
+</div>
+<!-- Destination Details Modal -->
+<div class="fixed inset-0 z-50 hidden bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4" id="dest-modal">
+<div class="bg-white rounded-2xl sm:rounded-3xl max-w-lg w-full p-5 sm:p-7 shadow-2xl space-y-4 relative max-h-[90vh] overflow-y-auto">
+<button aria-label="Close Details" class="absolute top-4 end-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-700 font-bold cursor-pointer" onclick="closeDestModal()">✕</button>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-najd-100 text-najd-600 text-xs font-bold" id="dest-modal-badge"></div>
+<h3 class="font-serif text-xl sm:text-2xl font-bold text-nile-900" id="dest-modal-title"></h3>
+<p class="text-xs sm:text-sm text-slate-600 leading-relaxed" id="dest-modal-desc"></p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+<div class="p-3 rounded-xl bg-najd-50 border border-najd-100">
+<div class="font-bold text-nile-800 mb-1" id="dest-modal-time-label"></div>
+<div class="text-slate-700" id="dest-modal-time"></div>
+</div>
+<div class="p-3 rounded-xl bg-emerald-50 border border-emerald-100">
+<div class="font-bold text-nile-800 mb-1" id="dest-modal-try-label"></div>
+<div class="text-slate-700" id="dest-modal-try"></div>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-nile-50 border border-nile-100 text-xs text-nile-900">
+<strong id="dest-modal-tip-label"></strong> <span id="dest-modal-tip"></span>
+</div>
+<div class="pt-2 flex items-center justify-between gap-3">
+<button class="flex-1 py-2.5 px-4 rounded-xl bg-nile-800 hover:bg-nile-900 text-white text-xs sm:text-sm font-bold cursor-pointer" id="dest-modal-trip-btn"></button>
+<button class="py-2.5 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs sm:text-sm font-semibold cursor-pointer" id="dest-modal-close-btn" onclick="closeDestModal()"></button>
+</div>
+</div>
+</div>
+<!-- Toast Notification -->
+<div class="fixed bottom-16 lg:bottom-5 start-1/2 -translate-x-1/2 rtl:translate-x-1/2 z-50 hidden px-4 py-2.5 rounded-2xl bg-nile-950 text-white text-xs sm:text-sm font-semibold shadow-2xl border border-najd-400/50 max-w-[92vw] truncate" id="toast-banner">
+<span id="toast-message">Updated!</span>
+</div>
+<script>
+        // ==========================================
+        // 1. STATE & BILINGUAL UI DICTIONARY
+        // ==========================================
+        let currentLang = 'en';
+        let selectedCountry = 'all';
+        let selectedCategory = 'all';
+        let selectedPhraseCat = 'greetings';
+        let activeModalDestId = null;
+        let userItinerary = [];
+
+        const uiStrings = {
+            en: {
+                toggleLabel: "العربية",
+                bannerTitle: "Egyptian Creator (المبدع المصري) • Season 2 (2026/2027)",
+                bannerSub: "Programming Track • Egyptian Consulate & Cultural Bureau in Riyadh & EYUA",
+                brandName: "Nile & Najd",
+                brandTagline: "Egypt & KSA Tourism & Vision Guide",
+                navDestinations: "Explore Destinations",
+                navItinerary: "My Trip Plan",
+                navToolkit: "Visitor Toolkit",
+                navYouth: "Youth Spirit",
+                floatingTripLabel: "My Trip",
+                btnProjectInfo: "Project Info",
+                heroBadge: "Made by Rozeen Ahmed • Egyptian Female Student in KSA",
+                heroTitle: `Your Ultimate Guide Between the <span class="text-najd-400">Nile</span> & <span class="text-emerald-400">Najd</span>`,
+                heroDesc: `Explore ancient wonders, Red Sea escapes, authentic cuisine, and futuristic <strong>Modern Vision</strong> mega-projects across <strong>Egypt</strong> and <strong>Saudi Arabia</strong>—with a live two-country trip planner and dialect bridge.`,
+                heroCtaPrimary: "Explore 16 Places & Build Trip",
+                heroCtaSecondary: "Dialect Bridge & Tips",
+                stat1Num: "16 Gems",
+                stat1Label: "8 Egypt • 8 KSA",
+                stat2Num: "Trip Builder",
+                stat2Label: "Custom Two-Country Plan",
+                stat3Num: "Dialect Bridge",
+                stat3Label: "Egyptian ↔ Saudi ↔ EN",
+                cardEgyptTitle: "Arab Republic of Egypt",
+                cardEgyptSub: "Cairo • Giza • Luxor • New Alamein",
+                cardSaudiTitle: "Kingdom of Saudi Arabia",
+                cardSaudiSub: "Riyadh • Diriyah • Al-Ula • NEOM",
+                quoteBadge: "Purpose & Vision • Rozeen Ahmed",
+                quoteText: `"As an Egyptian female student living in Saudi Arabia, I created this guide to help families, students, and travelers discover the heritage and modern vision of both brotherly nations."`,
+                creatorRoleBadge: "Made by an Egyptian Female Student in KSA",
+                creatorName: "Rozeen Ahmed",
+                creatorSchool: "Shumukh Al-Ajyal Private Schools • Egyptian Track",
+                creatorMotto: "Where Horizons Expand for a Vision of the Future",
+
+                destEyebrow: "Ultimate Tourism & Modern Vision Guide",
+                destTitle: "Explore Landmarks & Mega-Projects in Egypt & KSA",
+                destSubtitle: "Filter across Egypt and Saudi Arabia by Modern Vision projects, Ancient Heritage, Nature & Sea, or Hospitality & Cuisine—and add any stop directly to your personal itinerary.",
+                filterCountryLabel: "Country:",
+                filterAllCountries: "All (Egypt & KSA)",
+                filterEgypt: "🇪🇬 Egypt",
+                filterSaudi: "🇸🇦 Saudi Arabia",
+                filterCatLabel: "Experience:",
+                catAll: "All",
+                catModern: "Modern Vision",
+                catHeritage: "Heritage & History",
+                catNature: "Nature & Sea",
+                catHospitality: "Hospitality & Cuisine",
+                resetFiltersBtn: "Reset Filters",
+                bestTimeLabel: "Best Time",
+                mustTryLabel: "Must-Try",
+                tipLabel: "Visitor Tip",
+                detailsBtn: "Details",
+                addToTripBtn: "+ Add to Trip",
+                addedToTripBtn: "In Your Trip ✓",
+                closeBtn: "Close",
+
+                itinEyebrow: "Interactive Trip Builder",
+                itinTitle: "My Egypt ↔ Saudi Arabia Trip Itinerary",
+                itinSubtitle: "Plan a custom family or student tour across both countries, assign days, reorder stops, and copy your formatted itinerary to share.",
+                itinTotalLabel: "Total:",
+                itinSampleBtn: "Load Sample 4-Stop Tour",
+                itinCopyBtn: "Copy Trip Plan",
+                itinEmptyTitle: "Your two-country trip plan is currently empty",
+                itinEmptySub: "Tap '+ Add to Trip' on any destination above in Egypt or Saudi Arabia to build your itinerary!",
+                dayPrefix: "Day",
+                cardPassBadge: "Printable Souvenir Card",
+                cardPassTitle: "Nile & Najd Cultural & Travel Appreciation Card",
+                cardPassDesc: "Enter your name and download a high-resolution PNG card featuring the Shumukh Al-Ajyal emblem and celebrating Egypt 🇪🇬 & Saudi Arabia 🇸🇦.",
+                certNamePlaceholder: "Enter your name...",
+                certDefaultRecipient: "Rozeen Ahmed",
+                certDownloadBtn: "Download Card (PNG)",
+
+                toolEyebrow: "Visitor & Family Essentials",
+                toolTitle: "Egypt ↔ KSA Dialect Bridge & Traveler Tips",
+                toolSubtitle: "Compare everyday phrases side-by-side in English, Egyptian Arabic, and Saudi Arabic with one-tap copy, plus practical tips for visiting both countries.",
+                phraseTitle: "Everyday Dialect Bridge",
+                phraseSub: "Tap any phrase card to copy it instantly",
+                pcatGreetings: "Greetings",
+                pcatHospitality: "Hospitality",
+                pcatDining: "Dining",
+                pcatDirections: "Getting Around",
+                egyptDialectLabel: "🇪🇬 Egyptian",
+                saudiDialectLabel: "🇸🇦 Saudi",
+                checkTitle: "Smart Traveler & Family Tips",
+                checkSub: "Essential know-how for visiting both nations",
+                refsTitle: "Selected official references",
+                refsNote: "Schedules and access details can change. Confirm directly with each venue or operator before travel.",
+                refsGem: "Grand Egyptian Museum: visit information",
+                refsTransit: "Riyadh Public Transport: network information",
+                refsAlula: "Experience AlUla: official trip planner",
+                refsQiddiya: "Qiddiya City: official site",
+
+                voiceEyebrow: "Student Perspective",
+                voiceTitle: "The Spirit of Egypt Inside Every Student in KSA",
+                voiceDesc: "Living abroad transforms us into young cultural ambassadors. At Shumukh Al-Ajyal Private Schools, Egyptian students carry their heritage with pride while celebrating Saudi Arabia as a beloved second home.",
+                pillar1Title: "Academic & Cultural Pride",
+                pillar1Desc: "Sharing Egyptian history, literature, and warmth in classrooms across the Kingdom while excelling in programming and digital innovation.",
+                pillar2Title: "One Shared Future",
+                pillar2Desc: "Inspired by Egypt's New Republic and Saudi Vision 2030, youth in both nations are building bridges of technology and friendship for tomorrow.",
+
+                footerTitle: "Nile & Najd: Bridges of Heritage & Youth",
+                footerSub: `Submitted for <strong>"Egyptian Creator" (المبدع المصري) Season 2 (2026/2027)</strong> — Programming Track`,
+                footerSchool: "Shumukh Al-Ajyal Private Schools • Egyptian Track",
+                footerOrgs: "Egyptian Consulate in Riyadh • Egyptian Cultural & Educational Bureau • EYUA",
+                footerCredit: "Made by Rozeen Ahmed • Egyptian Female Student in KSA",
+
+                modalBadge: "Competition Submission Overview",
+                modalTitle: "About This Web Application",
+                modalIntro: `<strong>Nile & Najd</strong> was created by <strong>Rozeen Ahmed</strong> (an Egyptian female student at Shumukh Al-Ajyal Private Schools - Egyptian Track in Saudi Arabia) for the <strong>"Egyptian Creator" Season 2 (2026/2027)</strong> competition under the <strong>Programming</strong> track.`,
+                modalPoint1: `• <strong>Ultimate Tourism & Vision Guide:</strong> 16 curated destinations & Modern Vision mega-projects across Egypt and Saudi Arabia.`,
+                modalPoint2: `• <strong>Interactive Trip Builder & Souvenir Card:</strong> Plan a two-country itinerary, copy it to share, and download a custom PNG card.`,
+                modalPoint3: `• <strong>Bilingual & Responsive:</strong> Seamless English & Arabic switching (LTR/RTL) designed for phones, tablets, and desktops.`,
+                modalCloseBtn: "Explore App"
+            },
+            ar: {
+                toggleLabel: "English",
+                bannerTitle: "مسابقة «المبدع المصري» • الموسم الثاني (2026 / 2027)",
+                bannerSub: "فرع البرمجة • القنصلية المصرية والمكتب الثقافي بالرياض واتحاد شباب المصريين بالخارج",
+                brandName: "النيل ونجد",
+                brandTagline: "الدليل السياحي ومشاريع الرؤية بين مصر والسعودية",
+                navDestinations: "استكشف الوجهات",
+                navItinerary: "خطة رحلتي",
+                navToolkit: "دليل الزائر واللهجات",
+                navYouth: "روح الشباب",
+                floatingTripLabel: "رحلتي",
+                btnProjectInfo: "عن المشروع",
+                heroBadge: "تصميم وبرمجة: روزين أحمد • طالبة مصرية في المملكة العربية السعودية",
+                heroTitle: `دليلك الشامل للسياحة والرؤية الحديثة بين <span class="text-najd-400">النيل</span> و<span class="text-emerald-400">نجد</span>`,
+                heroDesc: `استكشف الحضارات العريقة وشواطئ البحر الأحمر والمأكولات الأصيلة ومشاريع <strong>الرؤية الحديثة</strong> الكبرى في <strong>مصر</strong> و<strong>المملكة العربية السعودية</strong> مع مخطط رحلات تفاعلي وقاموس اللهجات.`,
+                heroCtaPrimary: "استكشف 16 وجهة وصمّم رحلتك",
+                heroCtaSecondary: "جسر اللهجات ونصائح الزائر",
+                stat1Num: "16 وجهة",
+                stat1Label: "8 في مصر • 8 في السعودية",
+                stat2Num: "مخطط رحلات",
+                stat2Label: "جدول زيارة مشترك",
+                stat3Num: "جسر اللهجات",
+                stat3Label: "مصري ↔ سعودي ↔ إنجليزي",
+                cardEgyptTitle: "جمهورية مصر العربية",
+                cardEgyptSub: "القاهرة • الجيزة • الأقصر • العلمين الجديدة",
+                cardSaudiTitle: "المملكة العربية السعودية",
+                cardSaudiSub: "الرياض • الدرعية • العُلا • نيوم",
+                quoteBadge: "هدف التطبيق • روزين أحمد",
+                quoteText: `"صُنع بواسطة طالبة مصرية في المملكة العربية السعودية؛ ليكون دليلاً عملياً يساعد العائلات والطلاب والزوار على استكشاف تراث ومشاريع الرؤية الحديثة في البلدين الشقيقين."`,
+                creatorRoleBadge: "صُنع بواسطة طالبة مصرية في المملكة العربية السعودية",
+                creatorName: "روزين أحمد",
+                creatorSchool: "مدارس شموخ الأجيال الأهلية • قسم المسار المصري",
+                creatorMotto: "حيث تتسع الأفق لرؤية المستقبل",
+
+                destEyebrow: "الدليل السياحي الشامل ومشاريع الرؤية الحديثة",
+                destTitle: "اكتشف المعالم والمشاريع الكبرى في مصر والسعودية",
+                destSubtitle: "تصفّح الوجهات في مصر والسعودية حسب مشاريع الرؤية الحديثة أو التراث والتاريخ أو الطبيعة والبحر أو الضيافة والمأكولات، وأضفها مباشرة إلى خطة رحلتك.",
+                filterCountryLabel: "الدولة:",
+                filterAllCountries: "الكل (مصر والسعودية)",
+                filterEgypt: "🇪🇬 مصر",
+                filterSaudi: "🇸🇦 السعودية",
+                filterCatLabel: "التجربة:",
+                catAll: "الكل",
+                catModern: "الرؤية الحديثة",
+                catHeritage: "التراث والتاريخ",
+                catNature: "الطبيعة والبحر",
+                catHospitality: "الضيافة والمأكولات",
+                resetFiltersBtn: "عرض الكل",
+                bestTimeLabel: "أفضل وقت",
+                mustTryLabel: "تجربة مميزة",
+                tipLabel: "نصيحة للزائر",
+                detailsBtn: "التفاصيل",
+                addToTripBtn: "+ أضف لرحلتي",
+                addedToTripBtn: "في رحلتك ✓",
+                closeBtn: "إغلاق",
+
+                itinEyebrow: "مخطط الرحلات التفاعلي",
+                itinTitle: "خطة رحلتي بين مصر ↔ السعودية",
+                itinSubtitle: "صمّم جدول زيارتك العائلية أو الطلابية بين البلدين، وحدّد الأيام، ورتّب المحطات، وانسخ خطتك لمشاركتها فوراً.",
+                itinTotalLabel: "الإجمالي:",
+                itinSampleBtn: "تحميل جولة مقترحة (4 محطات)",
+                itinCopyBtn: "نسخ خطة الرحلة",
+                itinEmptyTitle: "خطة رحلتك فارغة حالياً",
+                itinEmptySub: "اضغط على «+ أضف لرحلتي» في أي وجهة أعلاه في مصر أو السعودية لبناء جدولك!",
+                dayPrefix: "اليوم",
+                cardPassBadge: "بطاقة تذكارية قابلة للتحميل",
+                cardPassTitle: "بطاقة تقدير رحلة وثقافة النيل ونجد",
+                cardPassDesc: "اكتب اسمك وحمّل بطاقة رقمية عالية الدقة (PNG) تحمل شعار مدارس شموخ الأجيال وتحتفي بالتواصل بين مصر 🇪🇬 والسعودية 🇸🇦.",
+                certNamePlaceholder: "اكتب اسمك هنا...",
+                certDefaultRecipient: "روزين أحمد",
+                certDownloadBtn: "تحميل البطاقة (PNG)",
+
+                toolEyebrow: "أساسيات الزائر والعائلة",
+                toolTitle: "جسر اللهجات ونصائح السفر بين مصر ↔ السعودية",
+                toolSubtitle: "قارن العبارات اليومية بالإنجليزية واللهجة المصرية والسعودية مع إمكانية النسخ بلمسة واحدة، بالإضافة إلى نصائح عملية للزوار.",
+                phraseTitle: "قاموس اللهجات اليومية",
+                phraseSub: "اضغط على أي بطاقة لنسخ العبارة فوراً",
+                pcatGreetings: "التحية والترحيب",
+                pcatHospitality: "الضيافة والكرم",
+                pcatDining: "المطاعم والأكل",
+                pcatDirections: "التنقل والاتجاهات",
+                egyptDialectLabel: "🇪🇬 بالمصري",
+                saudiDialectLabel: "🇸🇦 بالسعودي",
+                checkTitle: "نصائح ذكية للزوار والعائلات",
+                checkSub: "معلومات عملية تهمك عند زيارة البلدين",
+                refsTitle: "مصادر رسمية مختارة",
+                refsNote: "قد تتغير المواعيد وطرق الوصول. تحقّق مباشرةً من الجهة أو المشغّل قبل السفر.",
+                refsGem: "المتحف المصري الكبير: معلومات الزيارة",
+                refsTransit: "النقل العام بالرياض: معلومات الشبكة",
+                refsAlula: "منصة العلا الرسمية: خطّط لزيارتك",
+                refsQiddiya: "مدينة القدية: الموقع الرسمي",
+
+                voiceEyebrow: "منظور الطالبة",
+                voiceTitle: "روح وجمال مصر داخل كل طالبة وطالب مصري في السعودية",
+                voiceDesc: "العيش في المملكة يجعل منّا سفراء لوطننا؛ ففي مدارس شموخ الأجيال الأهلية نعتز بهويتنا المصرية العريقة ونعيش في المملكة العربية السعودية كوطنٍ ثانٍ غالٍ.",
+                pillar1Title: "فخر الهوية والتفوق العلمي",
+                pillar1Desc: "ننقل قصص الحضارة المصرية وروح المودة في مدارس المملكة مع التميز في البرمجة والابتكار الرقمي.",
+                pillar2Title: "مستقبل مشترك نصنعه معاً",
+                pillar2Desc: "بإلهام من الجمهورية الجديدة في مصر ورؤية المملكة 2030، يبني شباب البلدين جسوراً من التقنية والأخوة للمستقبل.",
+
+                footerTitle: "النيل ونجد: جسور التراث والشباب",
+                footerSub: `مشروع مشارك في مسابقة <strong>«المبدع المصري» الموسم الثاني (2026/2027)</strong> — فرع البرمجة`,
+                footerSchool: "مدارس شموخ الأجيال الأهلية • قسم المسار المصري",
+                footerOrgs: "القنصلية المصرية بالرياض • المكتب الثقافي التعليمي المصري • اتحاد شباب المصريين بالخارج",
+                footerCredit: "صُنع بواسطة روزين أحمد • طالبة مصرية في المملكة العربية السعودية",
+
+                modalBadge: "نبذة عن المشروع المشارك",
+                modalTitle: "حول هذا التطبيق التفاعلي",
+                modalIntro: `تم تصميم وبرمجة تطبيق <strong>«النيل ونجد»</strong> بواسطة الطالبة <strong>روزين أحمد</strong> (طالبة مصرية في مدارس شموخ الأجيال الأهلية - قسم المسار المصري بالمملكة العربية السعودية) للمشاركة في مسابقة <strong>«المبدع المصري» الموسم الثاني (2026/2027)</strong> ضمن فرع <strong>البرمجة</strong>.`,
+                modalPoint1: `• <strong>الدليل السياحي الشامل ومشاريع الرؤية:</strong> يضم 16 وجهة ومشروعاً حديثاً في مصر والسعودية.`,
+                modalPoint2: `• <strong>مخطط الرحلات والبطاقة التذكارية:</strong> صمّم جدول زيارتك بين البلدين وانسخه أو حمّل بطاقة تذكارية بصيغة PNG.`,
+                modalPoint3: `• <strong>واجهة ثنائية اللغة ومتجاوبة:</strong> يدعم العربية والإنجليزية بالكامل (RTL/LTR) ويعمل بسلاسة على الجوال والتابلت والكمبيوتر.`,
+                modalCloseBtn: "استكشف التطبيق"
+            }
+        };
+
+        // ==========================================
+        // 2. 16 CURATED DESTINATIONS (8 EGYPT + 8 KSA)
+        // ==========================================
+        const destinationsData = [
+            // --- EGYPT: MODERN VISION (4 Projects) ---
+            {
+                id: 'new_capital',
+                country: 'egypt',
+                category: 'modern',
+                en: {
+                    city: 'East Cairo, Egypt',
+                    name: 'New Administrative Capital & Iconic Tower',
+                    desc: 'Egypt’s flagship smart city featuring the 393-meter Iconic Tower—Africa’s tallest skyscraper—alongside the Green River Park, City of Arts and Culture, and Grand Al-Fattah Al-Aleem Mosque.',
+                    bestTime: 'Oct – Apr (Mild Sunny Weather)',
+                    mustTry: 'Green River Promenade & Arts City Opera Tour',
+                    tip: 'Ride the elevated Electric Light Rail Transit (LRT) from Adly Mansour Station for a panoramic arrival.'
+                },
+                ar: {
+                    city: 'شرق القاهرة، مصر',
+                    name: 'العاصمة الإدارية الجديدة والبرج الأيقوني',
+                    desc: 'أحدث المدن الذكية في مصر وتضم البرج الأيقوني بارتفاع 393 متراً كأطول برج في أفريقيا، وحديقة النهر الأخضر، ومدينة الفنون والثقافة، ومسجد الفتاح العليم.',
+                    bestTime: 'أكتوبر – أبريل (طقس معتدل ومشمس)',
+                    mustTry: 'التنزه في النهر الأخضر وزيارة مدينة الفنون والثقافة',
+                    tip: 'استخدم القطار الكهربائي الخفيف (LRT) من محطة عدلي منصور للوصول بسهولة والاستمتاع بالمشهد الحضاري.'
+                }
+            },
+            {
+                id: 'new_alamein',
+                country: 'egypt',
+                category: 'modern',
+                en: {
+                    city: 'North Coast, Egypt',
+                    name: 'New Alamein City & Mediterranean Towers',
+                    desc: 'A fourth-generation coastal smart city on the turquoise Mediterranean shore featuring waterfront skyscrapers, the Heritage City, Latin Quarter, and summer cultural festivals.',
+                    bestTime: 'May – Oct (Summer Beach & Festival Season)',
+                    mustTry: 'Mediterranean Seafood & Corniche Sunset Walk',
+                    tip: 'Visit the New Alamein Heritage City and lagoon promenade in the evening for family entertainment.'
+                },
+                ar: {
+                    city: 'الساحل الشمالي، مصر',
+                    name: 'مدينة العلمين الجديدة وأبراج الساحل الشمالي',
+                    desc: 'مدينة ساحلية ذكية من مدن الجيل الرابع على ساحل البحر المتوسط الفيروزي، تضم أبراجاً شاطئية شاهقة، والمدينة التراثية، والحي اللاتيني، ومهرجان العلمين الصيفي.',
+                    bestTime: 'مايو – أكتوبر (موسم الصيف والمهرجانات)',
+                    mustTry: 'المأكولات البحرية الطازجة وجولة الغروب على الكورنيش',
+                    tip: 'زُر المدينة التراثية وممشى البحيرات مساءً للاستمتاع بأجواء عائلية رائعة.'
+                }
+            },
+            {
+                id: 'gem_modern',
+                country: 'egypt',
+                category: 'modern',
+                en: {
+                    city: 'Giza Plateau, Egypt',
+                    name: 'Grand Egyptian Museum (GEM) & Giza Development',
+                    desc: 'The world’s largest archaeological museum dedicated to one civilization, fully opened in November 2025, blending futuristic glass architecture with digital exhibits and direct panoramic views of the Pyramids.',
+                    bestTime: 'Oct – Apr (Morning & Sunset Tours)',
+                    mustTry: 'Hanging Obelisk Plaza & Tutankhamun Galleries',
+                    tip: 'Book timed tickets online and use the eco-friendly electric buses around the upgraded Giza Plateau.'
+                },
+                ar: {
+                    city: 'هضبة الجيزة، مصر',
+                    name: 'المتحف المصري الكبير وتطوير هضبة الجيزة',
+                    desc: 'أكبر متحف أثري في العالم مخصص لحضارة واحدة، افتُتح بالكامل في نوفمبر 2025، ويجمع بين العمارة الزجاجية العصرية والعروض الرقمية التفاعلية مع إطلالة مباشرة على أهرامات الجيزة.',
+                    bestTime: 'أكتوبر – أبريل (جولات الصباح والغروب)',
+                    mustTry: 'ساحة المسلة المعلقة وقاعات كنوز توت عنخ آمون',
+                    tip: 'احجز تذكرتك إلكترونياً مسبقاً واستمتع بالحافلات الكهربائية الصديقة للبيئة في محيط الأهرامات.'
+                }
+            },
+            {
+                id: 'galala_city',
+                country: 'egypt',
+                category: 'modern',
+                en: {
+                    city: 'Ain Sokhna • Red Sea, Egypt',
+                    name: 'Al-Galala City & Mountain Cable Car',
+                    desc: 'Built 700 meters above the Red Sea on the Galala Plateau, offering the Middle East’s longest mountain cable car (4.5 km), an international yacht marina, and family aqua park just 90 minutes from Cairo.',
+                    bestTime: 'Year-Round (Weekend Getaway)',
+                    mustTry: 'Telepherique Cable Car Ride Over Red Sea Cliffs',
+                    tip: 'Ride the Galala Cable Car right before sunset for sweeping views over the Gulf of Suez.'
+                },
+                ar: {
+                    city: 'العين السخنة • البحر الأحمر، مصر',
+                    name: 'مدينة الجلالة والتلفريك الجبلي',
+                    desc: 'مدينة سياحية حديثة شُيّدت على ارتفاع 700 متر فوق سطح البحر الأحمر بهضبة الجلالة، وتضم أطول تلفريك جبلي في الشرق الأوسط بطول 4.5 كم، ومارينا لليخوت، وأكوا بارك للعائلات.',
+                    bestTime: 'طوال العام (90 دقيقة فقط من القاهرة)',
+                    mustTry: 'ركوب تلفريك الجلالة فوق جبال البحر الأحمر',
+                    tip: 'جرّب ركوب التلفريك قبل الغروب مباشرة للاستمتاع بإطلالة بانورامية على خليج السويس.'
+                }
+            },
+
+            // --- SAUDI ARABIA: MODERN VISION (4 Projects) ---
+            {
+                id: 'neom_vision',
+                country: 'saudi',
+                category: 'modern',
+                en: {
+                    city: 'Tabuk Province, Saudi Arabia',
+                    name: 'NEOM, THE LINE & Sindalah Island',
+                    desc: 'Saudi Vision 2030’s flagship sustainable region on the Red Sea—featuring Sindalah luxury yachting island, Trojena mountain destination, and zero-carbon futuristic urban living.',
+                    bestTime: 'Oct – Apr (Mild Red Sea Climate)',
+                    mustTry: 'Coral Reef Snorkeling & Marina Promenade',
+                    tip: 'Explore Sindalah’s marine reserve and coastal resorts along the pristine Gulf of Aqaba.'
+                },
+                ar: {
+                    city: 'منطقة تبوك، السعودية',
+                    name: 'نيوم وذا لاين وجزيرة سندالة',
+                    desc: 'مشروع رؤية السعودية 2030 الرائد للمستقبل المستدام على ساحل البحر الأحمر، ويضم جزيرة سندالة لليخوت، ووجهة تروجينا الجبلية، وتصاميم حضرية صديقة للبيئة.',
+                    bestTime: 'أكتوبر – أبريل (طقس معتدل على البحر الأحمر)',
+                    mustTry: 'الغوص بين الشعاب المرجانية وجولة المارينا',
+                    tip: 'استكشف المحمية البحرية والمنتجعات الساحلية الخلابة على خليج العقبة في نيوم.'
+                }
+            },
+            {
+                id: 'riyadh_modern',
+                country: 'saudi',
+                category: 'modern',
+                en: {
+                    city: 'Riyadh, Saudi Arabia',
+                    name: 'Riyadh Boulevard World, KAFD & Riyadh Metro',
+                    desc: 'Experience Riyadh’s modern transformation—from the global cultural pavilions of Boulevard World and futuristic King Abdullah Financial District (KAFD) to the driverless Riyadh Metro.',
+                    bestTime: 'Oct – Mar (Riyadh Season & Winter)',
+                    mustTry: 'Global Pavilions Tour & KAFD Architectural Plaza',
+                    tip: 'Ride the modern Riyadh Metro directly to KAFD Station to admire its iconic geometric design.'
+                },
+                ar: {
+                    city: 'الرياض، السعودية',
+                    name: 'بوليفارد وورلد ومركز الملك عبدالله المالي ومترو الرياض',
+                    desc: 'عِش نهضة العاصمة السعودية الحديثة؛ من أجنحة الثقافات العالمية في بوليفارد وورلد وأبراج مركز الملك عبدالله المالي (KAFD) إلى شبكة مترو الرياض الذكية.',
+                    bestTime: 'أكتوبر – مارس (موسم الرياض والشتاء)',
+                    mustTry: 'جولة الأجنحة العالمية والتصوير في ساحة KAFD',
+                    tip: 'استخدم مترو الرياض الحديث للوصول إلى محطة KAFD والاستمتاع بتصميمها المعماري الفريد.'
+                }
+            },
+            {
+                id: 'redsea_project',
+                country: 'saudi',
+                category: 'modern',
+                en: {
+                    city: 'Red Sea Coast, Saudi Arabia',
+                    name: 'The Red Sea Project & Shebara Resort',
+                    desc: 'An eco-luxury regenerative tourism destination spanning 90+ untouched islands powered 100% by renewable energy and celebrated for futuristic mirror-like overwater villas.',
+                    bestTime: 'Year-Round (Warm Turquoise Lagoons)',
+                    mustTry: 'Mangrove Eco-Kayaking & Desert Stargazing',
+                    tip: 'Join eco-certified boat tours to explore the world’s fourth-largest barrier reef system.'
+                },
+                ar: {
+                    city: 'ساحل البحر الأحمر، السعودية',
+                    name: 'مشروع البحر الأحمر ومنتجع شيبارة',
+                    desc: 'وجهة سياحية متجددة تضم أكثر من 90 جزيرة بكر تعمل بالطاقة المتجددة بنسبة 100%، وتشتهر بفللها العائمة ذات التصميم المستقبلي العاكس للطبيعة.',
+                    bestTime: 'طوال العام (بحيرات فيروزية دافئة)',
+                    mustTry: 'التجديف بين أشجار المانغروف وتأمل النجوم',
+                    tip: 'احجز جولات القوارب البيئية لاستكشاف رابع أكبر نظام للشعاب المرجانية في العالم.'
+                }
+            },
+            {
+                id: 'qiddiya_project',
+                country: 'saudi',
+                category: 'modern',
+                en: {
+                    city: 'Tuwaiq Mountains • Riyadh, Saudi Arabia',
+                    name: 'Qiddiya City',
+                    desc: 'Rising beneath the dramatic Tuwaiq cliffs near Riyadh, Qiddiya is built as a global capital of entertainment, sports, and culture—featuring Six Flags Qiddiya City and the Aquarabia water park, both now open to visitors.',
+                    bestTime: 'Oct – Apr (Cool Mountain Evenings)',
+                    mustTry: 'Record-Breaking Theme Park Rides & Cliff Overlooks',
+                    tip: 'Pair a morning visit to the Tuwaiq mountain viewpoints with Qiddiya’s family attractions.'
+                },
+                ar: {
+                    city: 'جبال طويق • الرياض، السعودية',
+                    name: 'مدينة القدية',
+                    desc: 'تُشيّد عند سفح جبال طويق الشامخة بالقرب من الرياض لتكون عاصمة الترفيه والرياضة والثقافة، وتضم مدينة ألعاب Six Flags القدية ومنتزه أكواريبيا المائي، وقد فتحا أبوابهما للزوار.',
+                    bestTime: 'أكتوبر – أبريل (أمسيات جبلية لطيفة)',
+                    mustTry: 'ألعاب المغامرات العالمية وإطلالة جبل طويق',
+                    tip: 'اجمع بين زيارة مطلات جبل طويق صباحاً والاستمتاع بمناطق الترفيه في القدية عصراً.'
+                }
+            },
+
+            // --- EGYPT: HERITAGE, NATURE & HOSPITALITY (4 Destinations) ---
+            {
+                id: 'cairo',
+                country: 'egypt',
+                category: 'hospitality',
+                en: {
+                    city: 'Old Cairo, Egypt',
+                    name: 'Old Cairo & Khan El-Khalili',
+                    desc: 'Stroll down historic Al-Muizz Street among centuries-old mosques, handcrafted brass lanterns, and traditional cafes filled with authentic Egyptian hospitality and warmth.',
+                    bestTime: 'Evening & Ramadan Nights',
+                    mustTry: 'Egyptian Koshary, Molokhia & Om Ali Dessert',
+                    tip: 'Start your walk at Bab Al-Futuh before sunset to see traditional artisans crafting copper lanterns.'
+                },
+                ar: {
+                    city: 'القاهرة التاريخية، مصر',
+                    name: 'القاهرة التاريخية وخان الخليلي',
+                    desc: 'تجول في شارع المعز لدين الله الفاطمي بين المساجد الأثرية والفوانيس النحاسية والمقاهي التراثية التي تنبض بكرم الضيافة وروح مصر الدافئة.',
+                    bestTime: 'المساء وليالي رمضان',
+                    mustTry: 'الكشري المصري والملوخية وطاجن أم علي',
+                    tip: 'ابدأ جولتك سيراً من باب الفتوح قبل الغروب لمشاهدة الحرفيين المبدعين.'
+                }
+            },
+            {
+                id: 'luxor',
+                country: 'egypt',
+                category: 'heritage',
+                en: {
+                    city: 'Upper Egypt',
+                    name: 'Luxor & Aswan Nile Temples',
+                    desc: 'Discover Karnak Temple and the Valley of the Kings in Luxor, then sail on a traditional wooden felucca in Aswan to Philae Island and colorful Nubian villages.',
+                    bestTime: 'Nov – Feb (Warm Winter Sun)',
+                    mustTry: 'Nubian Ful, Shamsi Bread & Hibiscus Tea',
+                    tip: 'Book a sunrise hot-air balloon flight in Luxor for unforgettable views over the Nile Valley.'
+                },
+                ar: {
+                    city: 'صعيد مصر',
+                    name: 'معابد الأقصر وأسوان النيلية',
+                    desc: 'اكتشف معبد الكرنك ووادي الملوك في الأقصر، ثم أبحر على متن فلوكة شراعية في أسوان نحو جزيرة فيلة والقرى النوبية الملونة.',
+                    bestTime: 'نوفمبر – فبراير (شتاء دافئ ومشمس)',
+                    mustTry: 'العيش الشمسي الصعيدي والكركديه الأسواني',
+                    tip: 'جرّب رحلة المنطاد وقت شروق الشمس في الأقصر لمشاهدة المعابد ووادي النيل من الأعلى.'
+                }
+            },
+            {
+                id: 'sharm_redsea',
+                country: 'egypt',
+                category: 'nature',
+                en: {
+                    city: 'South Sinai, Egypt',
+                    name: 'Sharm El-Sheikh, Dahab & Red Sea Reefs',
+                    desc: 'Dive or snorkel in crystal-clear turquoise waters teeming with vibrant coral reefs, golden Sinai mountains, and family-friendly coastal promenades.',
+                    bestTime: 'Year-Round (Best Mar – Nov)',
+                    mustTry: 'Fresh Red Sea Grilled Fish & Sayadeya Rice',
+                    tip: 'Glass-bottom boat tours from Sharm El Sheikh show the reefs to all ages without swimming, while Ras Mohammed National Park is the classic family snorkeling day trip.'
+                },
+                ar: {
+                    city: 'جنوب سيناء، مصر',
+                    name: 'شرم الشيخ ودهب وشعاب البحر الأحمر',
+                    desc: 'استمتع بالسباحة والغوص في المياه الفيروزية الصافية والشعاب المرجانية الخلابة بين جبال سيناء الذهبية والمنتجعات العائلية.',
+                    bestTime: 'طوال العام (أفضلها مارس – نوفمبر)',
+                    mustTry: 'الأسماك المشوية الطازجة وأرز الصيادية',
+                    tip: 'تتيح رحلات القوارب ذات القاع الزجاجي من شرم الشيخ مشاهدة الشعاب المرجانية لجميع الأعمار دون سباحة، بينما تُعد محمية رأس محمد أشهر رحلات الغوص السطحي العائلية.'
+                }
+            },
+            {
+                id: 'siwa_alex',
+                country: 'egypt',
+                category: 'nature',
+                en: {
+                    city: 'Western Desert & Mediterranean, Egypt',
+                    name: 'Siwa Oasis & Alexandria Corniche',
+                    desc: 'Float in crystal-blue mineral salt lakes in Siwa Oasis and enjoy breezy Mediterranean walks along Alexandria’s historic Corniche, Qaitbay Citadel, and Bibliotheca Alexandrina.',
+                    bestTime: 'Oct – Apr (Siwa) • Mar – Oct (Alexandria)',
+                    mustTry: 'Siwan Dates & Olive Oil • Alexandrian Seafood',
+                    tip: 'Visit Siwa’s Shali Fortress at sunset and explore the Bibliotheca Alexandrina manuscripts hall.'
+                },
+                ar: {
+                    city: 'الصحراء الغربية والبحر المتوسط، مصر',
+                    name: 'واحة سيوة وكورنيش الإسكندرية',
+                    desc: 'اكتشف بحيرات الملح الفيروزية وقلعة شالي في واحة سيوة، واستمتع بنسيم البحر المتوسط على كورنيش الإسكندرية وقلعة قايتباي ومكتبة الإسكندرية.',
+                    bestTime: 'أكتوبر – أبريل (سيوة) • مارس – أكتوبر (الإسكندرية)',
+                    mustTry: 'تمور وزيت زيتون سيوة • مأكولات الإسكندرية البحرية',
+                    tip: 'زُر قلعة شالي في سيوة وقت الغروب، وتجوّل في قاعات مكتبة الإسكندرية.'
+                }
+            },
+
+            // --- SAUDI ARABIA: HERITAGE, NATURE & HOSPITALITY (4 Destinations) ---
+            {
+                id: 'diriyah',
+                country: 'saudi',
+                category: 'heritage',
+                en: {
+                    city: 'Riyadh, Saudi Arabia',
+                    name: 'Historic Diriyah & Bujairi Terrace',
+                    desc: 'Explore the UNESCO World Heritage mud-brick palaces of At-Turaif—birthplace of the first Saudi state—paired with fine Najdi dining overlooking Wadi Hanifah.',
+                    bestTime: 'Nov – Mar (Riyadh Winter Season)',
+                    mustTry: 'Najdi Jareesh, Qursan & Cardamom Saudi Qahwa',
+                    tip: 'Reserve your evening entry pass online in advance to enjoy golden sunset lighting on At-Turaif.'
+                },
+                ar: {
+                    city: 'الرياض، السعودية',
+                    name: 'الدرعية التاريخية ومطل البجيري',
+                    desc: 'تجول بين قصور الطين النجدي المدرجة في اليونسكو بحي الطريف حيث تأسست الدولة السعودية الأولى، واستمتع بالمطاعم المطلة على وادي حنيفة.',
+                    bestTime: 'نوفمبر – مارس (موسم شتاء الرياض)',
+                    mustTry: 'الجريش والقرصان والقهوة السعودية بالهيل',
+                    tip: 'احجز تذكرة الدخول المسائية مسبقاً عبر الإنترنت للاستمتاع بإضاءة الغروب الساحرة.'
+                }
+            },
+            {
+                id: 'alula',
+                country: 'saudi',
+                category: 'heritage',
+                en: {
+                    city: 'Madinah Province, Saudi Arabia',
+                    name: 'Al-Ula, Hegra & Elephant Rock',
+                    desc: 'Marvel at 2,000-year-old Nabataean tombs carved into golden sandstone cliffs at Hegra, ancient Dadanite inscriptions, and lush oasis palm groves.',
+                    bestTime: 'Oct – Mar (Winter at Tantora)',
+                    mustTry: 'Al-Ula Barni Dates & Slow-Cooked Mandi',
+                    tip: 'Arrive at Elephant Rock (Jabal AlFil) an hour before sunset to watch the sandstone glow amber.'
+                },
+                ar: {
+                    city: 'منطقة المدينة المنورة، السعودية',
+                    name: 'العلا والحِجر وجبل الفيل',
+                    desc: 'تأمل الواجهات النبطية المنحوتة في الجبال الرملية منذ ألفي عام في مدائن صالح (الحِجر)، والنقوش الأثرية في دادان، وواحات النخيل الخضراء.',
+                    bestTime: 'أكتوبر – مارس (موسم شتاء طنطورة)',
+                    mustTry: 'تمور البرني في العُلا والمندي السعودي',
+                    tip: 'زُر جبل الفيل قبل الغروب بساعة لمشاهدة انعكاس أشعة الشمس الذهبية على الصخور.'
+                }
+            },
+            {
+                id: 'jeddah_balad',
+                country: 'saudi',
+                category: 'hospitality',
+                en: {
+                    city: 'Jeddah, Saudi Arabia',
+                    name: 'Historic Jeddah (Al-Balad)',
+                    desc: 'Walk through centuries-old coral-stone houses adorned with intricate wooden Roshan balconies, fragrant spice souqs, and art galleries near the Red Sea Corniche.',
+                    bestTime: 'Nov – Apr (Breezy Red Sea Evenings)',
+                    mustTry: 'Hijazi Saleeg, Mutabbaq & Chilled Sobia',
+                    tip: 'Visit Al-Balad after Maghrib prayer when historic alleyways glow with lanterns and family cafes.'
+                },
+                ar: {
+                    city: 'جدة، السعودية',
+                    name: 'جدة التاريخية (البلد)',
+                    desc: 'تجول بين البيوت التراثية المبنية من الحجر المرجاني ورواشينها الخشبية المزخرفة والأسواق الشعبية والمعارض الفنية بالقرب من كورنيش جدة.',
+                    bestTime: 'نوفمبر – أبريل (نسيم البحر الأحمر اللطيف)',
+                    mustTry: 'السليق الحجازي والمطبق والسوبيا الباردة',
+                    tip: 'زُر منطقة البلد بعد صلاة المغرب حيث تتألق الأزقة التاريخية بالفوانيس والمقاهي العائلية.'
+                }
+            },
+            {
+                id: 'abha_asir',
+                country: 'saudi',
+                category: 'nature',
+                en: {
+                    city: 'Asir Province, Saudi Arabia',
+                    name: 'Abha, Rijal Almaa & Asir Mountains',
+                    desc: 'Escape to Saudi Arabia’s misty green highlands more than 2,200 meters above sea level, ride mountain cable cars above the clouds, and tour colorful stone heritage villages.',
+                    bestTime: 'Jun – Sep (Cool Summer Retreat)',
+                    mustTry: 'Areeka with Mountain Honey & Asiri Haneeth',
+                    tip: 'Abha is a favorite summer retreat for families in KSA thanks to its cool temperatures and green peaks.'
+                },
+                ar: {
+                    city: 'منطقة عسير، السعودية',
+                    name: 'أبها ورجال ألمع وجبال عسير',
+                    desc: 'استمتع بالمرتفعات الخضراء الضبابية على ارتفاع يتجاوز 2,200 متر فوق سطح البحر، واركب التلفريك فوق السحاب، وزُر قرية رجال ألمع الحجرية الملونة.',
+                    bestTime: 'يونيو – سبتمبر (مصيف بارد وممطر)',
+                    mustTry: 'العريكة بالعسل الجبلي والحنيذ العسيري',
+                    tip: 'تُعد أبها الوجهة الصيفية المفضلة للعائلات في المملكة بفضل أجوائها الباردة وطبيعتها الخلابة.'
+                }
+            }
+        ];
+
+        // ==========================================
+        // 3. DIALECT PHRASEBOOK & TRAVELER TIPS DATA
+        // ==========================================
+        const phrasebookData = {
+            greetings: [
+                { en: "How are you?", egypt: "إزيّك؟ عامل إيه؟", saudi: "كيف حالك؟ شلونك؟", noteEn: "Warm everyday greeting", noteAr: "تحية يومية دافئة" },
+                { en: "Welcome! Make yourself at home", egypt: "أهلاً وسهلاً، البيت بيتك!", saudi: "يا هلا والله ومسهلا، حيّاك الله!", noteEn: "Welcoming guests", noteAr: "الترحيب بالضيوف" },
+                { en: "Thank you very much", egypt: "شكراً جزيلاً، تسلم إيدك", saudi: "مشكور وما قصّرت، يعطيك العافية", noteEn: "Polite appreciation", noteAr: "عبارة شكر وتقدير" },
+                { en: "Everything is wonderful!", egypt: "كله تمام وزي الفل!", saudi: "كل شي تمام ومية بالمية!", noteEn: "Expressing happiness", noteAr: "للتعبير عن الرضا" }
+            ],
+            hospitality: [
+                { en: "Would you like coffee or tea?", egypt: "تشرب شاي بالنعناع ولا قهوة؟", saudi: "تتقهوى معنا؟ سمّ بالله!", noteEn: "Classic host invitation", noteAr: "دعوة الضيافة التقليدية" },
+                { en: "May God bless your home", egypt: "ربنا يبارك في بيتكم", saudi: "الله يكثر خيركم ويبارك فيكم", noteEn: "Said to your host", noteAr: "دعاء يُقال للمضيف" },
+                { en: "We are honored by your visit", egypt: "نوّرتونا وشرّفتونا والله", saudi: "الدار داركم وتشرّفنا بزيارتكم", noteEn: "Heartfelt hospitality", noteAr: "ترحيب من القلب" },
+                { en: "God willing, very soon", egypt: "إن شاء الله قريب جداً", saudi: "بإذن الله عن قريب", noteEn: "Shared expression", noteAr: "عبارة مشتركة للتفاؤل" }
+            ],
+            dining: [
+                { en: "The food is delicious!", egypt: "الأكل تحفة، تسلم إيديكم!", saudi: "الأكل لذيذ مرّة، بالعافية!", noteEn: "Complimenting a meal", noteAr: "مدح الطعام اللذيذ" },
+                { en: "Could we see the menu?", egypt: "ممكن المنيو لو سمحت؟", saudi: "لو سمحت عطنا المنيو", noteEn: "At a restaurant", noteAr: "في المطعم" },
+                { en: "May it bring wellness", egypt: "بالهنا والشفا", saudi: "بالعافية على قلوبكم", noteEn: "Before or after eating", noteAr: "تُقال عند تناول الطعام" },
+                { en: "Fresh dates & coffee!", egypt: "يا سلام على البلح والقهوة!", saudi: "يا زين التمر والقهوة السعودية!", noteEn: "Afternoon treat", noteAr: "ضيافة العصر المفضلة" }
+            ],
+            directions: [
+                { en: "Where is the nearest metro?", egypt: "فين أقرب محطة مترو لو سمحت؟", saudi: "وين أقرب محطة مترو الله يعافيك؟", noteEn: "Cairo & Riyadh metros", noteAr: "مترو القاهرة والرياض" },
+                { en: "Is it close or far?", egypt: "هو قريب من هنا ولا بعيد؟", saudi: "هو قريب من هنا ولا بعيد؟", noteEn: "Identical in both dialects!", noteAr: "متطابقة في اللهجتين!" },
+                { en: "Go straight, then turn right", egypt: "امشي على طول وبعدين ادخل يمين", saudi: "امش سيده وبعدين لف يمين", noteEn: "Giving directions", noteAr: "وصف الاتجاهات" },
+                { en: "Have a safe trip!", egypt: "تروح وترجع بالسلامة يا رب", saudi: "رافقتكم السلامة، درب السلامة", noteEn: "Travel farewell", noteAr: "توديع المسافر" }
+            ]
+        };
+
+        const visitorChecklistData = [
+            {
+                enTitle: "Check weekly schedules",
+                enDesc: "Weekend days and opening hours vary by employer, venue, and public holidays. Check the official schedule for each place before you travel.",
+                arTitle: "تحقّق من أيام العمل والزيارة",
+                arDesc: "تختلف العطلات الأسبوعية ومواعيد الزيارة حسب جهة العمل والمكان والعطلات الرسمية. تحقّق من المواعيد الرسمية لكل وجهة قبل السفر."
+            },
+            {
+                enTitle: "Currencies & Digital Payments",
+                enDesc: "Egypt uses the Egyptian Pound (EGP) and Saudi Arabia uses the Saudi Riyal (SAR). Contactless cards and mobile wallets work widely across major cities.",
+                arTitle: "العملة والدفع الرقمي",
+                arDesc: "تستخدم مصر الجنيه المصري (EGP) والسعودية الريال السعودي (SAR)، وتتوفر المدفوعات الرقمية والبطاقات في المدن الكبرى بالبلدين."
+            },
+            {
+                enTitle: "Rapid Metro Networks",
+                enDesc: "Both Greater Cairo and Riyadh operate modern, air-conditioned metro lines connecting key landmarks, shopping districts, and universities.",
+                arTitle: "شبكات المترو الحديثة",
+                arDesc: "تضم كل من القاهرة الكبرى والرياض شبكة مترو حديثة ومكيفة تربط أهم المعالم الثقافية ومناطق التسوق والجامعات."
+            },
+            {
+                enTitle: "Best Seasons to Visit",
+                enDesc: "October to April brings mild sunny weather across Cairo, Luxor, Riyadh, and Al-Ula, while summer shines in New Alamein and Asir’s green peaks.",
+                arTitle: "أفضل مواسم السفر",
+                arDesc: "من أكتوبر إلى أبريل يكون الطقس معتدلاً ومشمساً في القاهرة والأقصر والرياض والعُلا، بينما الصيف مثالي للعلمين الجديدة وجبال عسير."
+            }
+        ];
+
+        // Clarify that weekends and opening days vary by employer, venue, and holidays.
+        visitorChecklistData[0].enTitle = "Check weekly schedules";
+        visitorChecklistData[0].enDesc = "Weekend days and opening hours vary by employer, venue, and public holidays. Check the official schedule for each place before you travel.";
+        visitorChecklistData[0].arTitle = "تحقّق من أيام العمل والزيارة";
+        visitorChecklistData[0].arDesc = "تختلف العطلات الأسبوعية ومواعيد الزيارة حسب جهة العمل والمكان والعطلات الرسمية. تحقّق من المواعيد الرسمية لكل وجهة قبل السفر.";
+
+        // ==========================================
+        // 4. UI HELPERS & NAVIGATION
+        // ==========================================
+        let toastTimer = null;
+        function showToast(msg) {
+            const banner = document.getElementById('toast-banner');
+            document.getElementById('toast-message').textContent = msg;
+            banner.classList.remove('hidden');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => banner.classList.add('hidden'), 2500);
+        }
+
+        function toggleMobileMenu() {
+            document.getElementById('mobile-nav-drawer').classList.toggle('hidden');
+        }
+
+        function closeMobileMenu() {
+            document.getElementById('mobile-nav-drawer').classList.add('hidden');
+        }
+
+        function openAboutModal() {
+            document.getElementById('about-modal').classList.remove('hidden');
+        }
+
+        function closeAboutModal() {
+            document.getElementById('about-modal').classList.add('hidden');
+        }
+
+        function copyTextSafe(text) {
+            const el = document.createElement('textarea');
+            el.value = text;
+            el.style.position = 'fixed';
+            el.style.opacity = '0';
+            document.body.appendChild(el);
+            el.select();
+            try { document.execCommand('copy'); } catch (e) {}
+            document.body.removeChild(el);
+        }
+
+        // ==========================================
+        // 5. DESTINATIONS FILTERING, MODAL & RENDERING
+        // ==========================================
+        function setCountryFilter(country) {
+            selectedCountry = country;
+            document.querySelectorAll('.country-btn').forEach(btn => {
+                btn.className = btn.dataset.country === country
+                    ? "country-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-nile-800 text-white transition-all cursor-pointer shrink-0"
+                    : "country-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-najd-100 transition-all cursor-pointer shrink-0";
+            });
+            renderDestinations();
+        }
+
+        function setCategoryFilter(cat) {
+            selectedCategory = cat;
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.className = btn.dataset.cat === cat
+                    ? "cat-btn px-3 py-2 rounded-xl text-xs font-bold bg-najd-500 text-white transition-all cursor-pointer shrink-0"
+                    : "cat-btn px-3 py-2 rounded-xl text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all cursor-pointer shrink-0";
+            });
+            renderDestinations();
+        }
+
+        function resetFilters() {
+            setCountryFilter('all');
+            setCategoryFilter('all');
+        }
+
+        function renderDestinations() {
+            const grid = document.getElementById('destinations-grid');
+            const countEl = document.getElementById('dest-results-count');
+            const t = uiStrings[currentLang];
+
+            const filtered = destinationsData.filter(item => {
+                const matchCountry = selectedCountry === 'all' || item.country === selectedCountry;
+                const matchCat = selectedCategory === 'all' || item.category === selectedCategory;
+                return matchCountry && matchCat;
+            });
+
+            countEl.textContent = currentLang === 'ar'
+                ? `عرض ${filtered.length} من الوجهات والمشاريع`
+                : `Showing ${filtered.length} destinations & projects`;
+
+            grid.innerHTML = filtered.map(item => {
+                const info = item[currentLang];
+                const isAdded = userItinerary.some(s => s.id === item.id);
+                const isEgypt = item.country === 'egypt';
+                const flag = isEgypt ? '🇪🇬' : '🇸🇦';
+                const borderClass = isEgypt ? 'border-t-najd-500' : 'border-t-oasis-600';
+                const badgeClass = isEgypt ? 'bg-najd-100 text-najd-600' : 'bg-emerald-50 text-oasis-700';
+                const catKey = 'cat' + item.category.charAt(0).toUpperCase() + item.category.slice(1);
+
+                return `
+                    <div class="rounded-2xl sm:rounded-3xl bg-white border border-slate-200 border-t-4 ${borderClass} p-4 sm:p-6 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between space-y-4">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between gap-2 flex-wrap">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full ${badgeClass} text-[11px] sm:text-xs font-bold">
+                                    <span>${flag}</span>
+                                    <span>${info.city}</span>
+                                </span>
+                                <span class="text-[11px] font-bold text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded-full">
+                                    ${t[catKey]}
+                                </span>
+                            </div>
+
+                            <h3 class="font-serif text-lg sm:text-xl font-bold text-nile-900 leading-snug">${info.name}</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">${info.desc}</p>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+                                <div class="p-2.5 rounded-xl bg-najd-50 border border-najd-100 text-xs">
+                                    <div class="font-bold text-nile-800 mb-0.5">📅 ${t.bestTimeLabel}</div>
+                                    <div class="text-slate-600 text-[11px]">${info.bestTime}</div>
+                                </div>
+                                <div class="p-2.5 rounded-xl bg-emerald-50/70 border border-emerald-100 text-xs">
+                                    <div class="font-bold text-nile-800 mb-0.5">✨ ${t.mustTryLabel}</div>
+                                    <div class="text-slate-600 text-[11px]">${info.mustTry}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-2.5 border-t border-slate-100 flex items-center gap-2">
+                            <button
+                                onclick="openDestModal('${item.id}')"
+                                class="py-2.5 px-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-nile-900 text-xs sm:text-sm font-bold transition-all cursor-pointer shrink-0"
+                            >
+                                ${t.detailsBtn}
+                            </button>
+                            <button
+                                onclick="toggleItineraryStop('${item.id}')"
+                                class="flex-1 py-2.5 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+                                    isAdded
+                                        ? 'bg-oasis-600 hover:bg-oasis-700 text-white shadow'
+                                        : 'bg-nile-800 hover:bg-nile-900 text-white shadow-sm'
+                                }"
+                            >
+                                ${isAdded ? t.addedToTripBtn : t.addToTripBtn}
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function openDestModal(destId) {
+            const dest = destinationsData.find(d => d.id === destId);
+            if (!dest) return;
+            activeModalDestId = destId;
+            const info = dest[currentLang];
+            const t = uiStrings[currentLang];
+            const flag = dest.country === 'egypt' ? '🇪🇬' : '🇸🇦';
+            const isAdded = userItinerary.some(s => s.id === destId);
+
+            document.getElementById('dest-modal-badge').textContent = `${flag} ${info.city}`;
+            document.getElementById('dest-modal-title').textContent = info.name;
+            document.getElementById('dest-modal-desc').textContent = info.desc;
+            document.getElementById('dest-modal-time-label').textContent = `📅 ${t.bestTimeLabel}`;
+            document.getElementById('dest-modal-time').textContent = info.bestTime;
+            document.getElementById('dest-modal-try-label').textContent = `✨ ${t.mustTryLabel}`;
+            document.getElementById('dest-modal-try').textContent = info.mustTry;
+            document.getElementById('dest-modal-tip-label').textContent = `💡 ${t.tipLabel}:`;
+            document.getElementById('dest-modal-tip').textContent = info.tip;
+            document.getElementById('dest-modal-close-btn').textContent = t.closeBtn;
+
+            const tripBtn = document.getElementById('dest-modal-trip-btn');
+            tripBtn.textContent = isAdded ? t.addedToTripBtn : t.addToTripBtn;
+            tripBtn.onclick = () => {
+                toggleItineraryStop(destId);
+                openDestModal(destId);
+            };
+
+            document.getElementById('dest-modal').classList.remove('hidden');
+        }
+
+        function closeDestModal() {
+            activeModalDestId = null;
+            document.getElementById('dest-modal').classList.add('hidden');
+        }
+
+        // ==========================================
+        // 6. TRIP PLANNER & SOUVENIR PNG CARD
+        // ==========================================
+        function toggleItineraryStop(destId) {
+            const idx = userItinerary.findIndex(s => s.id === destId);
+            const dest = destinationsData.find(d => d.id === destId);
+            if (!dest) return;
+
+            if (idx > -1) {
+                userItinerary.splice(idx, 1);
+                showToast(currentLang === 'ar'
+                    ? `تمت إزالة "${dest.ar.name}" من خطتك`
+                    : `Removed "${dest.en.name}" from your trip`);
+            } else {
+                userItinerary.push({ id: destId, day: userItinerary.length + 1 });
+                showToast(currentLang === 'ar'
+                    ? `تمت إضافة "${dest.ar.name}" إلى خطة رحلتك!`
+                    : `Added "${dest.en.name}" to your trip plan!`);
+            }
+
+            renderDestinations();
+            renderItinerary();
+        }
+
+        function moveItineraryStop(index, dir) {
+            const target = index + dir;
+            if (target < 0 || target >= userItinerary.length) return;
+            const temp = userItinerary[index];
+            userItinerary[index] = userItinerary[target];
+            userItinerary[target] = temp;
+            userItinerary.forEach((s, i) => { s.day = i + 1; });
+            renderItinerary();
+        }
+
+        function updateStopDay(index, val) {
+            userItinerary[index].day = parseInt(val, 10) || (index + 1);
+        }
+
+        function loadSampleTour() {
+            userItinerary = [
+                { id: 'new_capital', day: 1 },
+                { id: 'gem_modern', day: 2 },
+                { id: 'diriyah', day: 3 },
+                { id: 'neom_vision', day: 4 }
+            ];
+            renderDestinations();
+            renderItinerary();
+            showToast(currentLang === 'ar'
+                ? 'تم تحميل جولة الرؤية الحديثة (4 محطات)!'
+                : 'Loaded Modern Vision 4-stop tour!');
+        }
+
+        function renderItinerary() {
+            const listEl = document.getElementById('itinerary-list');
+            const t = uiStrings[currentLang];
+
+            let egyptCount = 0;
+            let saudiCount = 0;
+            userItinerary.forEach(s => {
+                const d = destinationsData.find(item => item.id === s.id);
+                if (d?.country === 'egypt') egyptCount++;
+                if (d?.country === 'saudi') saudiCount++;
+            });
+
+            document.getElementById('itin-egypt-count').textContent = egyptCount;
+            document.getElementById('itin-saudi-count').textContent = saudiCount;
+            document.getElementById('itin-total-count').textContent = userItinerary.length;
+            document.getElementById('nav-trip-count').textContent = userItinerary.length;
+            document.getElementById('drawer-trip-count').textContent = userItinerary.length;
+            document.getElementById('floating-trip-count').textContent = userItinerary.length;
+
+            if (userItinerary.length === 0) {
+                listEl.innerHTML = `
+                    <div class="rounded-2xl sm:rounded-3xl bg-white/5 border border-dashed border-white/20 p-8 text-center space-y-2">
+                        <h3 class="font-serif text-lg sm:text-xl font-bold text-white">${t.itinEmptyTitle}</h3>
+                        <p class="text-xs sm:text-sm text-slate-300 max-w-md mx-auto">${t.itinEmptySub}</p>
+                    </div>
+                `;
+                return;
+            }
+
+            listEl.innerHTML = userItinerary.map((stop, idx) => {
+                const dest = destinationsData.find(d => d.id === stop.id);
+                if (!dest) return '';
+                const info = dest[currentLang];
+                const flag = dest.country === 'egypt' ? '🇪🇬' : '🇸🇦';
+
+                return `
+                    <div class="rounded-2xl bg-white/10 border border-white/15 p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <div class="flex items-start sm:items-center gap-3.5">
+                            <select
+                                onchange="updateStopDay(${idx}, this.value)"
+                                aria-label="${t.dayPrefix}"
+                                class="px-3 py-2 rounded-xl bg-najd-500 text-white font-bold text-xs sm:text-sm focus:outline-none cursor-pointer shrink-0"
+                            >
+                                ${[1,2,3,4,5,6,7,8].map(dNum => `
+                                    <option value="${dNum}" ${stop.day === dNum ? 'selected' : ''} class="text-slate-900 bg-white">
+                                        ${t.dayPrefix} ${dNum}
+                                    </option>
+                                `).join('')}
+                            </select>
+
+                            <div>
+                                <div class="text-xs text-najd-300 font-semibold">${flag} ${info.city} • ${info.bestTime}</div>
+                                <h4 class="font-serif text-base sm:text-lg font-bold text-white mt-0.5">${info.name}</h4>
+                                <p class="text-xs text-slate-300 mt-1">✨ ${info.mustTry}</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 self-end sm:self-center shrink-0">
+                            <button aria-label="${currentLang === 'ar' ? 'نقل المحطة لأعلى' : 'Move stop up'}" title="${currentLang === 'ar' ? 'نقل المحطة لأعلى' : 'Move stop up'}" onclick="moveItineraryStop(${idx}, -1)" ${idx === 0 ? 'disabled' : ''} class="w-9 h-9 rounded-xl bg-white/10 hover:bg-white/20 disabled:opacity-30 text-white font-bold cursor-pointer">↑</button>
+                            <button aria-label="${currentLang === 'ar' ? 'نقل المحطة لأسفل' : 'Move stop down'}" title="${currentLang === 'ar' ? 'نقل المحطة لأسفل' : 'Move stop down'}" onclick="moveItineraryStop(${idx}, 1)" ${idx === userItinerary.length - 1 ? 'disabled' : ''} class="w-9 h-9 rounded-xl bg-white/10 hover:bg-white/20 disabled:opacity-30 text-white font-bold cursor-pointer">↓</button>
+                            <button aria-label="${currentLang === 'ar' ? 'إزالة من الخطة' : 'Remove from plan'}" title="${currentLang === 'ar' ? 'إزالة من الخطة' : 'Remove from plan'}" onclick="toggleItineraryStop('${dest.id}')" class="w-9 h-9 rounded-xl bg-rose-500/25 hover:bg-rose-500/45 border border-rose-400/30 text-rose-200 font-bold cursor-pointer">✕</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function copyItinerary() {
+            if (userItinerary.length === 0) {
+                showToast(currentLang === 'ar' ? 'أضف محطة واحدة على الأقل أولاً!' : 'Add at least one stop first!');
+                return;
+            }
+            const header = currentLang === 'ar'
+                ? '🌍 خطة رحلتي بين مصر 🇪🇬 والسعودية 🇸🇦 (تطبيق النيل ونجد - روزين أحمد):\n\n'
+                : '🌍 My Egypt 🇪🇬 & Saudi Arabia 🇸🇦 Trip Plan (Nile & Najd App by Rozeen Ahmed):\n\n';
+
+            const lines = userItinerary.map((stop, i) => {
+                const dest = destinationsData.find(d => d.id === stop.id);
+                const info = dest[currentLang];
+                const flag = dest.country === 'egypt' ? '🇪🇬' : '🇸🇦';
+                return currentLang === 'ar'
+                    ? `${i + 1}. [اليوم ${stop.day}] ${flag} ${info.name} (${info.city}) — تجربة مميزة: ${info.mustTry}`
+                    : `${i + 1}. [Day ${stop.day}] ${flag} ${info.name} (${info.city}) — Must Try: ${info.mustTry}`;
+            }).join('\n');
+
+            copyTextSafe(header + lines);
+            showToast(currentLang === 'ar' ? 'تم نسخ خطة رحلتك!' : 'Trip itinerary copied to clipboard!');
+        }
+
+        function downloadAppreciationCard() {
+            const inputVal = document.getElementById('cert-name-input').value.trim();
+            const recipient = inputVal || uiStrings[currentLang].certDefaultRecipient;
+
+            const canvas = document.createElement('canvas');
+            canvas.width = 1000;
+            canvas.height = 640;
+            const ctx = canvas.getContext('2d');
+
+            if (!ctx) {
+                showToast(currentLang === 'ar' ? 'تعذّر إنشاء البطاقة في هذا المتصفح.' : 'Could not create the card in this browser.');
+                return;
+            }
+
+            const grad = ctx.createLinearGradient(0, 0, 1000, 640);
+            grad.addColorStop(0, '#051924');
+            grad.addColorStop(0.5, '#0d3b54');
+            grad.addColorStop(1, '#11664a');
+            ctx.fillStyle = grad;
+            ctx.fillRect(0, 0, 1000, 640);
+
+            ctx.strokeStyle = '#d4a359';
+            ctx.lineWidth = 8;
+            ctx.strokeRect(28, 28, 944, 584);
+
+            ctx.textAlign = 'center';
+            ctx.fillStyle = '#e4c28b';
+            ctx.font = 'bold 20px sans-serif';
+            ctx.fillText('EGYPTIAN CREATOR • SEASON 2 (2026/2027) | مسابقة المبدع المصري', 500, 95);
+
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'bold 40px serif';
+            ctx.fillText('Nile & Najd Cultural & Travel Card', 500, 160);
+
+            ctx.fillStyle = '#d4a359';
+            ctx.font = 'bold 26px sans-serif';
+            ctx.fillText('بطاقة جسر التراث والشباب بين النيل ونجد', 500, 205);
+
+            ctx.fillStyle = 'rgba(255,255,255,0.12)';
+            ctx.fillRect(220, 245, 560, 74);
+            ctx.strokeStyle = '#d4a359';
+            ctx.lineWidth = 2;
+            ctx.strokeRect(220, 245, 560, 74);
+
+            ctx.fillStyle = '#f5eedc';
+            ctx.font = 'bold 32px sans-serif';
+            ctx.fillText(recipient, 500, 293);
+
+            ctx.fillStyle = '#e2e8f0';
+            ctx.font = '19px sans-serif';
+            ctx.fillText('Celebrating the enduring brotherhood & shared vision of Egypt & Saudi Arabia', 500, 380);
+            ctx.fillText('تقديراً للاحتفاء بأواصر الأخوة والرؤية المشتركة بين مصر والمملكة العربية السعودية', 500, 415);
+
+            ctx.fillStyle = '#7cc2ec';
+            ctx.font = 'bold 18px sans-serif';
+            ctx.fillText('مدارس شموخ الأجيال الأهلية - قسم المسار المصري | Shumukh Al-Ajyal Private Schools', 500, 495);
+
+            ctx.fillStyle = '#d4a359';
+            ctx.font = 'bold 17px sans-serif';
+            ctx.fillText('Programming Track • Made by Rozeen Ahmed (روزين أحمد) • KSA', 500, 535);
+
+            const link = document.createElement('a');
+            link.download = 'Nile-and-Najd-Card-Rozeen-Ahmed.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+
+        // ==========================================
+        // 7. DIALECT PHRASEBOOK & CHECKLIST
+        // ==========================================
+        function setPhraseCat(cat) {
+            selectedPhraseCat = cat;
+            document.querySelectorAll('.phrase-cat-btn').forEach(btn => {
+                btn.className = btn.dataset.pcat === cat
+                    ? "phrase-cat-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-nile-800 text-white cursor-pointer shrink-0"
+                    : "phrase-cat-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer shrink-0";
+            });
+            renderPhrasebook();
+        }
+
+        function renderPhrasebook() {
+            const container = document.getElementById('phrasebook-grid');
+            const t = uiStrings[currentLang];
+            const items = phrasebookData[selectedPhraseCat] || [];
+
+            container.innerHTML = items.map((p, idx) => `
+                <button
+                    onclick="copyPhrase(${idx})"
+                    class="text-start p-4 rounded-2xl bg-najd-50/70 hover:bg-najd-100 border border-slate-200 hover:border-najd-400 transition-all space-y-2 cursor-pointer"
+                >
+                    <div class="text-xs font-bold text-nile-800">${p.en}</div>
+                    <div class="space-y-1 pt-1.5 border-t border-slate-200/70 text-xs">
+                        <div><span class="font-bold text-najd-600">${t.egyptDialectLabel}:</span> <span class="font-semibold text-slate-800" dir="rtl">${p.egypt}</span></div>
+                        <div><span class="font-bold text-oasis-700">${t.saudiDialectLabel}:</span> <span class="font-semibold text-slate-800" dir="rtl">${p.saudi}</span></div>
+                    </div>
+                    <div class="text-[11px] text-slate-500">${currentLang === 'ar' ? p.noteAr : p.noteEn}</div>
+                </button>
+            `).join('');
+        }
+
+        function copyPhrase(idx) {
+            const p = phrasebookData[selectedPhraseCat][idx];
+            if (!p) return;
+            copyTextSafe(`${p.en} | 🇪🇬 ${p.egypt} | 🇸🇦 ${p.saudi}`);
+            showToast(currentLang === 'ar' ? 'تم نسخ العبارة باللهجتين!' : 'Phrase copied in Egyptian & Saudi dialects!');
+        }
+
+        function renderChecklist() {
+            const container = document.getElementById('checklist-items');
+            container.innerHTML = visitorChecklistData.map((item, i) => `
+                <div class="p-4 rounded-2xl bg-white border border-najd-300/40 shadow-sm flex items-start gap-3">
+                    <span class="w-7 h-7 rounded-lg bg-nile-800 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">${i + 1}</span>
+                    <div>
+                        <h4 class="font-bold text-sm text-nile-900">${currentLang === 'ar' ? item.arTitle : item.enTitle}</h4>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">${currentLang === 'ar' ? item.arDesc : item.enDesc}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // ==========================================
+        // 8. BILINGUAL SWITCHER & INITIALIZATION
+        // ==========================================
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'ar' : 'en';
+            applyLanguage(currentLang);
+        }
+
+        function applyLanguage(lang) {
+            const htmlEl = document.documentElement;
+            htmlEl.setAttribute('lang', lang);
+            htmlEl.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+            const t = uiStrings[lang];
+            document.getElementById('lang-toggle-label').textContent = t.toggleLabel;
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (t[key] !== undefined) el.innerHTML = t[key];
+            });
+
+            document.getElementById('cert-name-input').placeholder = t.certNamePlaceholder;
+
+            renderDestinations();
+            renderItinerary();
+            renderPhrasebook();
+            renderChecklist();
+            if (activeModalDestId) openDestModal(activeModalDestId);
+        }
+
+        applyLanguage('en');
+    </script>
+</body>
+</html>
